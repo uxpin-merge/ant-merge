@@ -1,8 +1,16 @@
-import React, { FC } from 'react';
-import { Card as CardM, CardProps } from 'flowbite-react';
+import { PropsWithChildren } from "react";
+import { Card as ANTComponent, CardProps } from "antd";
 
-const Card: FC = (props: CardProps) => {
-  return <CardM {...props} />
+interface MergeProps extends CardProps {
+  //Add additional prop definitions here
 }
+/**
+ * @uxpindocurl https://ant.design/components/Card/
+ */
+const Card = (props: PropsWithChildren<MergeProps>) => {
+  return (
+      <ANTComponent {...props}/>
+  );
+};
 
 export default Card;
