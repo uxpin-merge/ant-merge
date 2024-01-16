@@ -12,16 +12,18 @@ const Typography = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props}/>
-
+        <>
+            <ANTComponent.Text {...props} />
+            <ANTComponent.Title {...props} />
+        </>
     );
 };
 
-Typography.propTypes = { 
+Typography.propTypes = {
     /** The content of the component. */
     children: PropTypes.node,
 
-    
+
 };
 
 Typography.defaultProps = {};
