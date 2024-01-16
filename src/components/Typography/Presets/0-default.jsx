@@ -3,6 +3,6 @@ import Typography from '../Typography';
 
 export default (
   <Typography uxpId="typography-1">
-  Content here
+    Content here
   </Typography>
 );

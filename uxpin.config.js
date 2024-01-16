@@ -9,7 +9,7 @@ module.exports = {
           'src/components/FloatButton/Group/Group.jsx',
           'src/components/FloatButton/BackTop/BackTop.jsx',
           'src/components/Typography/Typography.jsx',
-          'src/components/TypographyText/TypographyText.jsx',
+          'src/components/Typography/Text/Text.jsx',
 
         ]
       }

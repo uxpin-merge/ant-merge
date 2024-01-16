@@ -1,30 +1,22 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { Typography as ANTComponent } from "antd";
 
 /**
- * @uxpindocurl https://ant.design/components/Typography.Text/
- * @uxpindescription TODO
+//  * @uxpinnamespace Typography
  */
-/**
- * @uxpinnamespace Typography
- */
+
 const Text = (props) => {
-    // Component logic
 
     return (
-        // Your component JSX
-        <Title>test</Title>
-
+        <ANTComponent.Text {...props}>{props.children}</ANTComponent.Text>
     );
 };
+
 
 Text.propTypes = {
     /** The content of the component. */
     children: PropTypes.node,
-
     /**
      * Code style.
      */
