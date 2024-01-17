@@ -865,8 +865,10 @@ import IconM, { HomeOutlined } from '@ant-design/icons';
 export default function Icon(props) {
   return (
     <div>
-      {React.createElement(Icons[props.icon], { ...props })}
-      <IconM component={() => React.createElement(Icons[props.icon], { ...props })} />
+      {/* {React.createElement(Icons[props.icon], { ...props })}
+      <IconM component={() => React.createElement(Icons[props.icon], { ...props })} /> */}
+
+      <IconM component={props.component} />
     </div>
   );
 }
@@ -875,8 +877,9 @@ Icon.propTypes = {
   /**
    * The name of the icon. See:https://ant.design/components/icon
    */
+  component: PropTypes.node,
   icon: PropTypes.oneOf([
-    "AccountBookFilled",
+    <AccountBookFilled />,
     "AccountBookOutlined",
     "AccountBookTwoTone",
     "AimOutlined",
