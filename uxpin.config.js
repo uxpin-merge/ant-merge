@@ -5,7 +5,7 @@ module.exports = {
         name: 'General',
         include: [
           'src/components/Button/Button.jsx',
-          'src/components/Icon/Icon.js',
+          'src/components/Icon/Icon.jsx',
           'src/components/FloatButton/FloatButton.jsx',
           'src/components/FloatButton/Group/Group.jsx',
           'src/components/FloatButton/BackTop/BackTop.jsx',
