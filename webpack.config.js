@@ -27,6 +27,11 @@ const config = {
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader',],
       },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        loader: 'svg-react-loader',
+      },
     ]
   },
   resolve: {
