@@ -1,36 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-// import sizes from '../../styles/sizes';
 import * as Icons from '@ant-design/icons';
-
-// const getIconSize = (size) => {
-//   switch (size) {
-//     case 'xs':
-//     case 's':
-//     case 'm':
-//     case 'l':
-//     case 'xl':
-//     case 'xxl':
-//     case 'xxxl':
-//       return `${sizes[size]}px`;
-
-//     default:
-//       return `${sizes.xs}px`;
-//   }
-// };
-
-export default function Icon({ color, icon, size }) {
-  // const iconSize = getIconSize(size);
-
-  return React.createElement(Icons[icon], {
-    fill: color,
-    height: "50px",
-    width: "50px",
-  });
+/**
+ * @uxpindocurl https://ant.design/components/icon
+ * @uxpindescription Icons from @ant-design/icons. You can still set style property for size and color of icons.
+ */
+export default function Icon(props) {
+  return React.createElement(Icons[props.icon], { ...props });
 }
 
 Icon.propTypes = {
-  color: PropTypes.string,
+  /**
+   * The name of the icon. See:https://ant.design/components/icon
+   */
   icon: PropTypes.oneOf([
     "AccountBookFilled",
     "AccountBookOutlined",
@@ -821,7 +803,31 @@ Icon.propTypes = {
     "ZhihuSquareFilled",
     "ZoomInOutlined",
     "ZoomOutOutlined"
-
   ]),
-  size: PropTypes.oneOf(['10px', '20px', '100px']),
+
+
+  /**
+ * The className of Icon
+ */
+  className: PropTypes.string,
+
+  /**
+* Rotate by n degrees
+*/
+  rotate: PropTypes.number,
+
+  /**
+   * Rotate icon with animation
+   */
+  spin: PropTypes.bool,
+
+  /**
+   * The style properties of icon, like fontSize and color
+   */
+  style: PropTypes.object,
+
+  /**
+   * Specify the primary color. Only supported for icon names ending with TwoTone
+   */
+  twoToneColor: PropTypes.string,
 };

@@ -4,7 +4,7 @@ import { Button as ANTComponent } from "antd";
 
 /**
  * @uxpindocurl https://ant.design/components/Button/
- * @uxpindescription TODO
+ * @uxpindescription To trigger an operation. Ant Design we provide 5 types of buttons: • Primary • Default • Dashed • Text • Link
  */
 
 const Button = (props) => {
@@ -20,6 +20,7 @@ const Button = (props) => {
 Button.propTypes = {
     /** The content of the component. */
     children: PropTypes.node,
+
     /**
         * Option to fit button width to its parent width.
         */
@@ -29,7 +30,7 @@ Button.propTypes = {
      * Semantic DOM class.
      * Version: 5.4.0
      */
-    classNames: PropTypes.object, // Record<SemanticDOM, string>
+    classNames: PropTypes.object,
 
     /**
      * Set the danger status of button.
@@ -80,9 +81,8 @@ Button.propTypes = {
 
     /**
      * Semantic DOM style.
-     * Version: 5.4.0
      */
-    styles: PropTypes.object, // Record<SemanticDOM, CSSProperties>
+    styles: PropTypes.object,
 
     /**
      * Same as target attribute of a, works when href is specified.
@@ -102,22 +102,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-
-    block: false, // Default for fitting button width to its parent width
-    classNames: {}, // Default semantic DOM class
-    danger: false, // Default danger status of button
-    disabled: false, // Default disabled state of button
-    ghost: false, // Default for making background transparent and inverting text and border colors
-    href: '', // Default redirect url of link button
-    htmlType: 'button', // Default original html type of button
-    icon: null, // Default icon component of button
-    loading: false, // Default loading status of button
-    shape: 'default', // Default button shape
-    size: 'middle', // Default size of button
-    styles: {}, // Default semantic DOM style
-    target: '', // Default target attribute when href is specified
-    type: 'default', // Default button type
-    onClick: () => { }, // Default handler for click event
 };
 
 export default Button;

@@ -3,9 +3,8 @@ import Icon from '../Icon';
 
 export default (
   <Icon
-    icon="CalendarSvg"
-    color="primary"
-    size="100px"
+    icon="AccountBookFilled"
+    style={{ fontSize: "", color: "" }}
     uxpId="icon1"
   />
 );
