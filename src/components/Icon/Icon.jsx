@@ -13,6 +13,9 @@ export default function Icon(props) {
 }
 
 Icon.propTypes = {
+  /** Size of the icon */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+
   /**
    * The name of the icon. See:https://ant.design/components/icon
    */

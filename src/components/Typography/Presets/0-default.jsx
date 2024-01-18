@@ -2,7 +2,5 @@ import * as React from 'react';
 import Typography from '../Typography';
 
 export default (
-  <Typography uxpId="typography-1">
-    Content here
-  </Typography>
+  <Typography uxpId="typography-1" content="hello!" />
 );

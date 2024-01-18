@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Typography as ANTComponent } from "antd";
+import Text from './Text/Text'
 
 /**
  * @uxpindocurl https://ant.design/components/Typography/
@@ -22,5 +23,10 @@ Typography.propTypes = {
 };
 
 Typography.defaultProps = {};
+Typography.Text = Text;
 
 export default Typography;
+
+
+
+

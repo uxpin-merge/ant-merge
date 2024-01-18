@@ -2,98 +2,65 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Typography as ANTComponent } from "antd";
 
+
 /**
-//  * @uxpinnamespace Typography
+ * @uxpindocurl https://ant.design/components/typography/
+ * @uxpindescription Basic text writing, including headings, body text, lists, and more.
+ * @uxpinnamespace Typography
  */
-
 const Text = (props) => {
-
     return (
-        <ANTComponent.Text {...props}>{props.children}</ANTComponent.Text>
+        <ANTComponent.Text {...props}>Typography.Text</ANTComponent.Text>
     );
 };
 
-
 Text.propTypes = {
-    /** The content of the component. */
+    /** The content of the Text */
     children: PropTypes.node,
-    /**
-     * Code style.
-     */
+    /** Code style */
     code: PropTypes.bool,
 
-    /**
-     * Whether to be copyable, customize it via setting an object.
-     * Type can be boolean or 'copyable' object.
-     */
-    copyable: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.object // copyable object
-    ]),
+    /** Whether to be copyable, customize it via setting an object */
+    copyable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /**
-     * Deleted line style.
-     */
+    /** Deleted line style */
     delete: PropTypes.bool,
 
-    /**
-     * Disabled content.
-     */
+    /** Disabled content */
     disabled: PropTypes.bool,
 
-    /**
-     * If editable. Can be a boolean or an 'editable' object for more control.
-     */
-    editable: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.object // editable object
-    ]),
+    /** If editable. Can control edit state when is object */
+    editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /**
-     * Display ellipsis when text overflows. Configurable with an object.
-     * Note: 'expandable', 'rows', and 'onExpand' properties are not applicable.
-     */
+    /** Display ellipsis when text overflows, can't configure expandable、rows and onExpand by using object. Diff with Typography.Paragraph, Text do not have 100% width style which means it will fix width on the first ellipsis. If you want to have responsive ellipsis, please set width manually */
     ellipsis: PropTypes.oneOfType([
         PropTypes.bool,
-        PropTypes.object // Omit<ellipsis, 'expandable' | 'rows' | 'onExpand'>
+        PropTypes.shape({
+            expandable: PropTypes.bool,
+            rows: PropTypes.number,
+            onExpand: PropTypes.func,
+        }),
     ]),
 
-    /**
-     * Keyboard style.
-     * Version: 4.3.0
-     */
+    /** Keyboard style */
     keyboard: PropTypes.bool,
 
-    /**
-     * Marked style.
-     */
+    /** Marked style */
     mark: PropTypes.bool,
 
-    /**
-     * Set the handler to handle click event.
-     */
-    onClick: PropTypes.func, // (event) => void
+    /** Set the handler to handle click event */
+    onClick: PropTypes.func,
 
-    /**
-     * Bold style.
-     */
+    /** Bold style */
     strong: PropTypes.bool,
 
-    /**
-     * Italic style.
-     * Version: 4.16.0
-     */
+    /** Italic style */
     italic: PropTypes.bool,
 
-    /**
-     * Content type. Values are 'secondary', 'success', 'warning', or 'danger'.
-     */
+    /** Content type */
     type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
 
-    /**
-     * Underlined style.
-     * Version: 4.16.0
-     */
+    /** Underlined style */
     underline: PropTypes.bool,
 };
 
