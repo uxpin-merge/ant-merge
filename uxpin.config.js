@@ -25,7 +25,12 @@ module.exports = {
           'src/components/Col/Col.jsx',
           'src/components/Row/Row.jsx',
           'src/components/Layout/Layout.jsx',
+          'src/components/Layout/Header/Header.jsx',
+          'src/components/Layout/Sider/Sider.jsx',
+          'src/components/Layout/Footer/Footer.jsx',
+          'src/components/Layout/Content/Content.jsx',
           'src/components/Space/Space.jsx',
+          'src/components/Space/Compact/Compact.jsx',
         ]
       },
 
