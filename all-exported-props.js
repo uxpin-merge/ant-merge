@@ -1041,7 +1041,6 @@ AutoComplete.Option.propTypes = {
     onSelect: PropTypes.func,
 };
 
-import PropTypes from 'prop-types';
 
 Cascader.propTypes = {
     /** Array of options available for the cascader */
@@ -1499,7 +1498,7 @@ RangePicker.propTypes = {
     showTime: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
 
     /** To set default time of selected date */
-    showTime.defaultValue: PropTypes.arrayOf(PropTypes.object),
+    // showTime.defaultValue: PropTypes.arrayOf(PropTypes.object),
 
     /** To set date */
     value: PropTypes.arrayOf(PropTypes.object),
