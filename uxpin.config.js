@@ -11,6 +11,8 @@ module.exports = {
           'src/components/FloatButton/BackTop/BackTop.jsx',
           'src/components/Typography/Typography.jsx',
           'src/components/Typography/Text/Text.jsx',
+          'src/components/Typography/Title/Title.jsx',
+          'src/components/Typography/Paragraph/Paragraph.jsx',
 
         ]
       }

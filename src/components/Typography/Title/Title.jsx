@@ -8,13 +8,13 @@ import { Typography as ANTComponent } from "antd";
  * @uxpindescription Basic text writing, including headings, body text, lists, and more.
  * @uxpinnamespace Typography
  */
-const Text = (props) => {
+const Title = (props) => {
     return (
-        <ANTComponent.Text {...props} />
+        <ANTComponent.Title {...props} />
     );
 };
 
-Text.propTypes = {
+Title.propTypes = {
     /** The content of the Text */
     children: PropTypes.node,
     /** Code style */
@@ -32,27 +32,23 @@ Text.propTypes = {
     /** If editable. boolean or object. See documentation.*/
     editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /** Display ellipsis when text overflows, can't configure expandable、rows and onExpand by using object. Diff with Typography.Paragraph, Text do not have 100% width style which means it will fix width on the first ellipsis. If you want to have responsive ellipsis, please set width manually */
+    /** Display ellipsis. boolean or object. See documentation.*/
     ellipsis: PropTypes.oneOfType([
         PropTypes.bool,
         PropTypes.shape({
-            expandable: PropTypes.bool,
             rows: PropTypes.number,
-            onExpand: PropTypes.func,
+            expandable: PropTypes.bool,
         }),
     ]),
 
-    /** Keyboard style */
-    keyboard: PropTypes.bool,
+    /** Set content importance. Match with h1, h2, h3, h4, h5 */
+    level: PropTypes.oneOf([1, 2, 3, 4, 5]),
 
     /** Marked style */
     mark: PropTypes.bool,
 
     /** Set the handler to handle click event */
     onClick: PropTypes.func,
-
-    /** Bold style */
-    strong: PropTypes.bool,
 
     /** Italic style */
     italic: PropTypes.bool,
@@ -64,6 +60,6 @@ Text.propTypes = {
     underline: PropTypes.bool,
 };
 
-Text.defaultProps = {};
+Title.defaultProps = {};
 
-export default Text;
+export default Title;
