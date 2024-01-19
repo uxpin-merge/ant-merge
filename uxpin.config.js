@@ -38,6 +38,9 @@ module.exports = {
         include: [
           'src/components/Anchor/Anchor.jsx',
           // 'src/components/AnchorItem/AnchorItem.jsx',
+          'src/components/Breadcrumb/Breadcrumb.jsx',
+          'src/components/Breadcrumb/Item/Item.jsx',
+
         ]
       },
 
