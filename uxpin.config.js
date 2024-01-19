@@ -5,17 +5,31 @@ module.exports = {
         name: 'General',
         include: [
           'src/components/Button/Button.jsx',
-          'src/components/Icon/Icon.jsx',
           'src/components/FloatButton/FloatButton.jsx',
           'src/components/FloatButton/Group/Group.jsx',
           'src/components/FloatButton/BackTop/BackTop.jsx',
+          'src/components/Icon/Icon.jsx',
           'src/components/Typography/Typography.jsx',
           'src/components/Typography/Text/Text.jsx',
+          'src/components/Typography/Link/Link.jsx',
           'src/components/Typography/Title/Title.jsx',
           'src/components/Typography/Paragraph/Paragraph.jsx',
 
         ]
-      }
+      },
+      {
+        name: 'Layout',
+        include: [
+          'src/components/Divider/Divider.jsx',
+          'src/components/Flex/Flex.jsx',
+          'src/components/Col/Col.jsx',
+          'src/components/Row/Row.jsx',
+          'src/components/Layout/Layout.jsx',
+          'src/components/Space/Space.jsx',
+        ]
+      },
+
+
 
       // {
       //   name: 'Components',

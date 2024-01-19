@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Typography as ANTComponent } from "antd";
+import Link from './Link/Link';
 import Text from './Text/Text';
 import Title from './Title/Title';
 import Paragraph from './Paragraph/Paragraph'
@@ -26,6 +27,7 @@ Typography.propTypes = {
 };
 
 Typography.defaultProps = {};
+Typography.Link = Link;
 Typography.Text = Text;
 Typography.Title = Title;
 Typography.Paragraph = Paragraph;
