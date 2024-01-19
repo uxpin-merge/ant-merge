@@ -33,7 +33,13 @@ module.exports = {
           'src/components/Space/Compact/Compact.jsx',
         ]
       },
-
+      {
+        name: 'Navigation',
+        include: [
+          'src/components/Anchor/Anchor.jsx',
+          // 'src/components/AnchorItem/AnchorItem.jsx',
+        ]
+      },
 
 
       // {
