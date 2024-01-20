@@ -3100,16 +3100,7 @@ Badge.propTypes = {
     count: PropTypes.node,
 
     /** Semantic DOM class */
-    classNames: PropTypes.shape({
-        /** The class for the badge */
-        badge: PropTypes.string,
-        /** The class for the count */
-        count: PropTypes.string,
-        /** The class for the dot */
-        dot: PropTypes.string,
-        /** The class for the ribbon */
-        ribbon: PropTypes.string,
-    }),
+    classNames: PropTypes.objectOf(PropTypes.string), // Since 5.7.0
 
     /** Whether to display a red dot instead of count */
     dot: PropTypes.bool,
@@ -3130,16 +3121,7 @@ Badge.propTypes = {
     status: PropTypes.oneOf(['success', 'processing', 'default', 'error', 'warning']),
 
     /** Semantic DOM style */
-    styles: PropTypes.shape({
-        /** The style for the badge */
-        badge: PropTypes.object,
-        /** The style for the count */
-        count: PropTypes.object,
-        /** The style for the dot */
-        dot: PropTypes.object,
-        /** The style for the ribbon */
-        ribbon: PropTypes.object,
-    }),
+    styles: PropTypes.objectOf(PropTypes.object), // Since 5.7.0
 
     /** If status is set, text sets the display text of the status dot */
     text: PropTypes.node,

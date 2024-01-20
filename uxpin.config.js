@@ -43,6 +43,16 @@ module.exports = {
 
         ]
       },
+      {
+        name: 'Data Display',
+        include: [
+          'src/components/Avatar/Avatar.jsx',
+          'src/components/Badge/Badge.jsx',
+          'src/components/Badge/Ribbon/Ribbon.jsx',
+          'src/components/Card/Card.jsx',
+
+        ]
+      },
 
 
       // {
