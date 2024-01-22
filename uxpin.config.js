@@ -52,6 +52,36 @@ module.exports = {
           'src/components/Badge/Ribbon/Ribbon.jsx',
           'src/components/Card/Card.jsx',
           'src/components/Card/Grid/Grid.jsx',
+
+          //--- 'src/components/Calendar/Calendar.jsx',
+          // 'src/components/Carousel/Carousel.jsx',
+          // 'src/components/Collapse.jsx',
+          //--- 'src/components/Descriptions.jsx',
+
+          'src/components/Empty/Empty.jsx',
+          'src/components/Image/Image.jsx',
+          'src/components/List/List.jsx',
+          'src/components/List/Item/Item.jsx',
+          'src/components/Popover/Popover.jsx',
+          'src/components/QRCode/QRCode.jsx',
+          'src/components/Segmented/Segmented.jsx',
+          'src/components/Statistic/Statistic.jsx',
+
+          //--- 'src/components/Table.jsx',
+
+
+          'src/components/Tabs/Tabs.jsx',
+          'src/components/Tabs/TabPane/TabPane.jsx',
+          'src/components/Tag/Tag.jsx',
+          'src/components/Timeline/Timeline.jsx',
+          'src/components/Timeline/Item/Item.jsx',
+          'src/components/Tooltip/Tooltip.jsx',
+
+          //--- 'src/components/Tour.jsx',
+          //--- 'src/components/Tree.jsx',
+
+
+
         ]
       },
 
