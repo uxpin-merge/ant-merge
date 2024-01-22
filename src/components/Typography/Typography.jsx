@@ -24,6 +24,9 @@ const Typography = (props) => {
 Typography.propTypes = {
     /** The content of the component. */
     children: PropTypes.node,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 };
 
 Typography.defaultProps = {};

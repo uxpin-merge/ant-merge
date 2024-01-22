@@ -62,6 +62,9 @@ Text.propTypes = {
 
     /** Underlined style */
     underline: PropTypes.bool,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 };
 
 Text.defaultProps = {};

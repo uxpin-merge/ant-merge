@@ -37,6 +37,10 @@ BackTop.propTypes = {
      */
     visibilityHeight: PropTypes.number,
 
+
+    /** The style properties of the component */
+    style: PropTypes.object,
+
     /**
      * A callback function, which can be executed when you click the button.
      */

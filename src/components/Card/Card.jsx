@@ -43,9 +43,12 @@ Card.propTypes = {
 
  /** Size of card */ size: PropTypes.oneOf(['default', 'small']),
 
+    /** The style properties of the component */
+    style: PropTypes.object,
+
  /** Extra content in tab bar */ tabBarExtraContent: PropTypes.node,
 
- /** List of TabPane's head */ key: PropTypes.string.isRequired, tab: PropTypes.node.isRequired,
+ /** List of TabPane's head */ tabList: PropTypes.node,
 
  /** Tabs */ tabProps: PropTypes.object,
 

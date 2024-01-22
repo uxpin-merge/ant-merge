@@ -60,6 +60,9 @@ Link.propTypes = {
     /** Bold style */
     strong: PropTypes.bool,
 
+    /** The style properties of the component */
+    style: PropTypes.object,
+
     /** Specifies where to display the linked URL	 */
     target: PropTypes.string,
 

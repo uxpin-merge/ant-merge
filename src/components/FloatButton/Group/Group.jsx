@@ -37,6 +37,8 @@ Group.propTypes = {
      */
     open: PropTypes.bool,
 
+    /** The style properties of the component */
+    style: PropTypes.object,
     /**
      * Callback executed when active menu is changed. This is used in conjunction with trigger.
      */

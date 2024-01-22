@@ -56,6 +56,9 @@ Col.propTypes = {
     /** Screen ≥ 1600px, could be a span value or an object containing above props */
     xxl: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
 
+    /** The style properties of the component */
+    style: PropTypes.object,
+
 };
 
 Col.defaultProps = {};

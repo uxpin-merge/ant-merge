@@ -30,29 +30,11 @@ Anchor.propTypes = {
     /** Set Anchor direction */
     direction: PropTypes.oneOf(['vertical', 'horizontal']),
 
-    /** Listening for anchor link change */
-    onChange: PropTypes.func,
-
-    /** Set the handler to handle click event */
-    onClick: PropTypes.func,
-
-    /** Whether show ink-square when affix={false} */
-    showInkInFixed: PropTypes.bool,
-
-    /** Anchor scroll offset, default as offsetTop, example */
-    targetOffset: PropTypes.number,
-
     /** Scrolling container */
     getContainer: PropTypes.func,
 
     /** Customize the anchor highlight */
     getCurrentAnchor: PropTypes.func,
-
-    /** Pixels to offset from top when calculating position of scroll */
-    offsetTop: PropTypes.number,
-
-    /** Replace items' href in browser history instead of pushing it */
-    replace: PropTypes.bool,
 
     /** Data configuration option content, support nesting through children */
     items: PropTypes.arrayOf(
@@ -64,6 +46,27 @@ Anchor.propTypes = {
             title: PropTypes.string,
         })
     ),
+
+    /** Listening for anchor link change */
+    onChange: PropTypes.func,
+
+    /** Set the handler to handle click event */
+    onClick: PropTypes.func,
+
+    /** Pixels to offset from top when calculating position of scroll */
+    offsetTop: PropTypes.number,
+
+    /** Replace items' href in browser history instead of pushing it */
+    replace: PropTypes.bool,
+
+    /** Whether show ink-square when affix={false} */
+    showInkInFixed: PropTypes.bool,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
+
+    /** Anchor scroll offset, default as offsetTop, example */
+    targetOffset: PropTypes.number,
 };
 
 Anchor.defaultProps = {};

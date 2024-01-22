@@ -25,14 +25,17 @@ Breadcrumb.propTypes = {
     /** Custom item renderer */
     itemRender: PropTypes.func,
 
-    /** Routing parameters */
-    params: PropTypes.object,
-
     /** The routing stack information of router */
     items: PropTypes.array,
 
+    /** Routing parameters */
+    params: PropTypes.object,
+
     /** Custom separator */
     separator: PropTypes.node,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 
 };
 

@@ -30,6 +30,9 @@ AnchorItem.propTypes = {
     /** Replace item href in browser history instead of pushing it */
     replace: PropTypes.bool,
 
+    /** The style properties of the component */
+    style: PropTypes.object,
+
     /** Specifies where to display the linked URL */
     target: PropTypes.string,
 

@@ -26,7 +26,8 @@ Ribbon.propTypes = {
 
     /** The placement of the Ribbon, 'start' and 'end' follow text direction (RTL or LTR) */
     placement: PropTypes.oneOf(['start', 'end']),
-
+    /** The style properties of the component */
+    style: PropTypes.object,
     /** Content inside the Ribbon */
     text: PropTypes.node,
 };

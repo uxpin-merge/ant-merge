@@ -21,6 +21,7 @@ const Item = (props) => {
 Item.propTypes = {
     /** The content of the component. */
     children: PropTypes.node,
+
     /** The additional css class */
     className: PropTypes.string,
 
@@ -30,18 +31,20 @@ Item.propTypes = {
     /** Target of hyperlink. Can not work with path */
     href: PropTypes.string,
 
-    /** Connected path. Each path will connect with prev one. Can not work with href */
-    path: PropTypes.string,
+    /** The menu props */
+    menu: PropTypes.node,
 
     /** Set the handler to handle click event */
     onClick: PropTypes.func,
 
-    /** The menu props */
-    menu: PropTypes.node,
+    /** Connected path. Each path will connect with prev one. Can not work with href */
+    path: PropTypes.string,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 
     /** Item name */
     title: PropTypes.node,
-
 };
 
 Item.defaultProps = {};

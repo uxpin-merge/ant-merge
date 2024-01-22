@@ -48,7 +48,7 @@ Badge.propTypes = {
     status: PropTypes.oneOf(['success', 'processing', 'default', 'error', 'warning']),
 
     /** Semantic DOM style */
-    styles: PropTypes.objectOf(PropTypes.object), // Since 5.7.0
+    styles: PropTypes.object, // Since 5.7.0
 
     /** If status is set, text sets the display text of the status dot */
     text: PropTypes.node,

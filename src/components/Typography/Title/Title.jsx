@@ -53,6 +53,10 @@ Title.propTypes = {
     /** Italic style */
     italic: PropTypes.bool,
 
+
+    /** The style properties of the component */
+    style: PropTypes.object,
+
     /** Content type */
     type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
 

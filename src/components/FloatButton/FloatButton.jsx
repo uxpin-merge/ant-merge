@@ -54,6 +54,10 @@ FloatButton.propTypes = {
      */
     onClick: PropTypes.func, // (event) => void
 
+
+    /** The style properties of the component */
+    style: PropTypes.object,
+
     /**
      * The target of hyperlink.
      */

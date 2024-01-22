@@ -30,10 +30,6 @@ Flex.propTypes = {
         'self-start',
         'self-end',
         'baseline',
-        // 'first baseline',
-        // 'last baseline',
-        // 'safe center',
-        // 'unsafe center',
         'inherit',
         'initial',
         'revert',
@@ -70,13 +66,14 @@ Flex.propTypes = {
         'space-around',
         'space-evenly',
         'stretch',
-        // 'safe center',
-        // 'unsafe center',
         'inherit',
         'initial',
         'revert',
         'revert-layer',
         'unset']),
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 
     /** Sets whether the element is displayed in a single line or in multiple lines */
     wrap: PropTypes.oneOf(['nowrap', 'wrap', 'wrap-reverse', 'inherit', 'initial', 'revert', 'revert-layer', 'unset']),
