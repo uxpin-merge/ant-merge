@@ -51,7 +51,7 @@ module.exports = {
           'src/components/Badge/Badge.jsx',
           'src/components/Badge/Ribbon/Ribbon.jsx',
           'src/components/Card/Card.jsx',
-          // 'src/components/Card/Grid/Grid.jsx',
+          'src/components/Card/Grid/Grid.jsx',
         ]
       },
 

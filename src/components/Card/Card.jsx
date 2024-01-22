@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Card as ANTComponent } from "antd";
+import Grid from "./Grid/Grid";
 
 /**
  * @uxpindocurl https://ant.design/components/Card/
@@ -57,9 +58,13 @@ Card.propTypes = {
  /** Card style type, can be set to inner or not set */ type: PropTypes.oneOf(['default', 'inner']),
 
  /** Callback when tab is switched */ onTabChange: PropTypes.func,
+    /** The className of container */
+    className: PropTypes.string,
 
 };
 
 Card.defaultProps = {};
+
+Card.Grid = Grid;
 
 export default Card;
