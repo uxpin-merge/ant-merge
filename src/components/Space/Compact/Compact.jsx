@@ -31,6 +31,10 @@ Compact.propTypes = {
 
     /** Set child component size */
     size: PropTypes.oneOf(['large', 'middle', 'small']),
+
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 };
 
 Compact.defaultProps = {};
