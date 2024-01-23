@@ -41,6 +41,10 @@ module.exports = {
           'src/components/Breadcrumb/Breadcrumb.jsx',
           'src/components/Breadcrumb/Item/Item.jsx',
 
+          // 'src/components/Dropdown/Dropdown.jsx',
+          // 'src/components/Menu/Menu.jsx',
+          'src/components/Pagination/Pagination.jsx',
+          // 'src/components/Steps/Steps.jsx',
         ]
       },
       {
@@ -79,8 +83,6 @@ module.exports = {
 
           'src/components/Tour/Tour.jsx',
           // 'src/components/Tour/Step/Step.jsx',
-
-
           //--- 'src/components/Tree.jsx',
 
 
