@@ -53,10 +53,12 @@ module.exports = {
           'src/components/Card/Card.jsx',
           'src/components/Card/Grid/Grid.jsx',
           'src/components/Carousel/Carousel.jsx',
+          'src/components/Collapse/Collapse.jsx',
+          'src/components/Collapse/Panel/Panel.jsx',
 
           //--- 'src/components/Calendar/Calendar.jsx',
           // 
-          // 'src/components/Collapse.jsx',
+          // 
           //--- 'src/components/Descriptions.jsx',
 
           'src/components/Empty/Empty.jsx',
