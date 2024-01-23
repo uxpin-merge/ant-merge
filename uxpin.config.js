@@ -52,9 +52,10 @@ module.exports = {
           'src/components/Badge/Ribbon/Ribbon.jsx',
           'src/components/Card/Card.jsx',
           'src/components/Card/Grid/Grid.jsx',
+          'src/components/Carousel/Carousel.jsx',
 
           //--- 'src/components/Calendar/Calendar.jsx',
-          // 'src/components/Carousel/Carousel.jsx',
+          // 
           // 'src/components/Collapse.jsx',
           //--- 'src/components/Descriptions.jsx',
 
