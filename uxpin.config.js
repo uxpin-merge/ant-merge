@@ -55,7 +55,8 @@ module.exports = {
           'src/components/Carousel/Carousel.jsx',
           'src/components/Collapse/Collapse.jsx',
           'src/components/Collapse/Panel/Panel.jsx',
-
+          'src/components/Descriptions/Descriptions.jsx',
+          'src/components/Descriptions/Item/Item.jsx',
           //--- 'src/components/Calendar/Calendar.jsx',
           // 
           // 
