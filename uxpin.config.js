@@ -58,11 +58,6 @@ module.exports = {
           'src/components/Descriptions/Descriptions.jsx',
           'src/components/Descriptions/Item/Item.jsx',
           'src/components/Calendar/Calendar.jsx',
-          //--- 
-          // 
-          // 
-          //--- 'src/components/Descriptions.jsx',
-
           'src/components/Empty/Empty.jsx',
           'src/components/Image/Image.jsx',
           'src/components/List/List.jsx',
@@ -82,7 +77,10 @@ module.exports = {
           'src/components/Timeline/Item/Item.jsx',
           'src/components/Tooltip/Tooltip.jsx',
 
-          //--- 'src/components/Tour.jsx',
+          'src/components/Tour/Tour.jsx',
+          // 'src/components/Tour/Step/Step.jsx',
+
+
           //--- 'src/components/Tree.jsx',
 
 
