@@ -6,6 +6,7 @@ import { Checkbox as ANTComponent } from "antd";
 /**
  * @uxpindocurl https://ant.design/components/Checkbox/
  * @uxpindescription Generate a group of checkboxes.
+  * @uxpinnamespace Checkbox
  */
 
 const Group = (props) => {
@@ -19,6 +20,13 @@ const Group = (props) => {
 };
 
 Group.propTypes = {
+
+    /** The content of the component. */
+    children: PropTypes.node,
+
+
+    /** The style properties of the component */
+    style: PropTypes.object,
 
     /** Default selected value */
     defaultValue: PropTypes.arrayOf(PropTypes.oneOfType([

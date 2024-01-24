@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Checkbox as ANTComponent } from "antd";
+import Group from "./Group/Group";
 
 
 /**
@@ -50,5 +51,7 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {};
+
+Checkbox.Group = Group;
 
 export default Checkbox;
