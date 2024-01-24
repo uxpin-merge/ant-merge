@@ -100,6 +100,7 @@ module.exports = {
           'src/components/InputNumber/InputNumber.jsx',
           'src/components/Rate/Rate.jsx',
           'src/components/Slider/Slider.jsx',
+          'src/components/Switch/Switch.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
@@ -111,7 +112,7 @@ module.exports = {
           // 
           // Select
           // 
-          // Switch
+          // 
           // TimePicker
           // Transfer
           // TreeSelect
