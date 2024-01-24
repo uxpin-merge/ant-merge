@@ -101,6 +101,7 @@ module.exports = {
           'src/components/Rate/Rate.jsx',
           'src/components/Slider/Slider.jsx',
           'src/components/Switch/Switch.jsx',
+          'src/components/TimePicker/TimePicker.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
@@ -113,7 +114,7 @@ module.exports = {
           // Select
           // 
           // 
-          // TimePicker
+          // 
           // Transfer
           // TreeSelect
           // Upload
