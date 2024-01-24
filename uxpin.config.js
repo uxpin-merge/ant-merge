@@ -98,6 +98,7 @@ module.exports = {
           'src/components/Checkbox/Group/Group.jsx',
           'src/components/ColorPicker/ColorPicker.jsx',
           'src/components/InputNumber/InputNumber.jsx',
+          'src/components/Rate/Rate.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
@@ -106,7 +107,7 @@ module.exports = {
           // 
           // Mentions
           // Radio
-          // Rate
+          // 
           // Select
           // Slider
           // Switch

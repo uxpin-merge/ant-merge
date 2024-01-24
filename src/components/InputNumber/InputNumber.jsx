@@ -5,7 +5,7 @@ import { InputNumber as ANTComponent } from "antd";
 
 /**
  * @uxpindocurl https://ant.design/components/InputNumber/
- * @uxpindescription TODO
+ * @uxpindescription Enter a number within certain range with the mouse or keyboard.
  */
 
 const InputNumber = (props) => {
