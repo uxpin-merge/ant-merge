@@ -44,7 +44,8 @@ module.exports = {
           // 'src/components/Dropdown/Dropdown.jsx',
           // 'src/components/Menu/Menu.jsx',
           'src/components/Pagination/Pagination.jsx',
-          // 'src/components/Steps/Steps.jsx',
+          'src/components/Steps/Steps.jsx',
+          'src/components/Steps/Item/Item.jsx',
         ]
       },
       {
