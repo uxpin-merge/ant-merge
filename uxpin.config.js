@@ -97,12 +97,13 @@ module.exports = {
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Checkbox/Group/Group.jsx',
           'src/components/ColorPicker/ColorPicker.jsx',
+          'src/components/InputNumber/InputNumber.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
           // Form
           // Input
-          // InputNumber
+          // 
           // Mentions
           // Radio
           // Rate
