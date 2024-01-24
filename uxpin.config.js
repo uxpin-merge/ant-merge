@@ -99,6 +99,7 @@ module.exports = {
           'src/components/ColorPicker/ColorPicker.jsx',
           'src/components/InputNumber/InputNumber.jsx',
           'src/components/Rate/Rate.jsx',
+          'src/components/Slider/Slider.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
@@ -109,7 +110,7 @@ module.exports = {
           // Radio
           // 
           // Select
-          // Slider
+          // 
           // Switch
           // TimePicker
           // Transfer
