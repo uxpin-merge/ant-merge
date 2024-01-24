@@ -31,7 +31,7 @@ Rate.propTypes = {
 /** Whether to allow clear when click again */ allowClear: PropTypes.bool,
 /** Whether to allow semi selection */ allowHalf: PropTypes.bool,
 /** If get focus when component mounted */ autoFocus: PropTypes.bool,
-/** The custom character of rate */
+/** The custom character of rate */ character: PropTypes.node,
 /** The custom class name of rate */ className: PropTypes.string,
 /** Star count */ count: PropTypes.number,
 /** The default value */ defaultValue: PropTypes.number,
