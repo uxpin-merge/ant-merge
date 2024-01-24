@@ -16,7 +16,7 @@ const TreeNode = (props) => {
         <ANTComponent.TreeNode {...props} />
 
     );
-}; ß
+};
 
 TreeNode.propTypes = {
     /** The content of the component. */
