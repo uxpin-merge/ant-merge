@@ -96,10 +96,9 @@ module.exports = {
         include: [
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Checkbox/Group/Group.jsx',
+          'src/components/ColorPicker/ColorPicker.jsx',
           // AutoComplete
           // Cascader
-          // Checkbox
-          // ColorPicker   
           // DatePicker
           // Form
           // Input
