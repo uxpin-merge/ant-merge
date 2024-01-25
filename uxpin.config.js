@@ -112,12 +112,13 @@ module.exports = {
           'src/components/Mentions/Option/Option.jsx',
           'src/components/Input/Input.jsx',
           'src/components/Input/TextArea/TextArea.jsx',
-
+          'src/components/Form/Form.jsx',
+          'src/components/Form/Item/Item.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
           // Form
-          // Input
+          // 
           // 
           // 
           // 
