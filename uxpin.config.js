@@ -108,6 +108,9 @@ module.exports = {
           'src/components/Upload/Dragger/Dragger.jsx',
           'src/components/Radio/Radio.jsx',
           'src/components/Radio/Group/Group.jsx',
+          'src/components/Mentions/Mentions.jsx',
+          'src/components/Mentions/Option/Option.jsx',
+
           // AutoComplete
           // Cascader
           // DatePicker
@@ -115,7 +118,7 @@ module.exports = {
           // Input
           // 
           // Mentions
-          // Radio
+          // 
           // 
           // Select
           // 
