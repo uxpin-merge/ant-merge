@@ -111,6 +111,7 @@ module.exports = {
           'src/components/Mentions/Mentions.jsx',
           'src/components/Mentions/Option/Option.jsx',
           'src/components/Input/Input.jsx',
+          'src/components/Input/TextArea/TextArea.jsx',
 
           // AutoComplete
           // Cascader

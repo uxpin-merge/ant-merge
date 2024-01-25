@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Input as ANTComponent } from "antd";
+import TextArea from "./TextArea/TextArea";
 
 /**
  * @uxpindocurl https://ant.design/components/Input/
- * @uxpindescription TODO
+ * @uxpindescription A basic widget for getting the user input is a text field. 
  */
 
 const Input = (props) => {
@@ -91,5 +92,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {};
+
+Input.TextArea = TextArea;
 
 export default Input;
