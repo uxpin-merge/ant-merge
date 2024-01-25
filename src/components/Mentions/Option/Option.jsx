@@ -32,7 +32,7 @@ Option.propTypes = {
     style: PropTypes.object,
 
     /** Title of the option */
-    label: PropTypes.node,
+    // label: PropTypes.node,
 
     /** The key value of the option */
     key: PropTypes.string,
