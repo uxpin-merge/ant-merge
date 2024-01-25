@@ -106,6 +106,8 @@ module.exports = {
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
           'src/components/Upload/Upload.jsx',
           'src/components/Upload/Dragger/Dragger.jsx',
+          'src/components/Radio/Radio.jsx',
+          'src/components/Radio/Group/Group.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
