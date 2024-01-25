@@ -1,25 +1,29 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Input as ANTComponent } from "antd";
-import TextArea from "./TextArea/TextArea";
-import Password from "./Password/Password";
 
 /**
  * @uxpindocurl https://ant.design/components/Input/
- * @uxpindescription A basic widget for getting the user input is a text field. 
+ * @uxpindescription A basic widget for getting the user input is a text field.
+  * @uxpinnamespace Input
  */
 
-const Input = (props) => {
-    // Component logic
+const Password = (props) => {
+    //Component logic
 
     return (
-        // Your component JSX
-        <ANTComponent {...props} />
+        //Your component JSX
+        <ANTComponent.Password {...props} />
 
     );
 };
 
-Input.propTypes = {
+Password.propTypes = {
+    /** Custom toggle button */
+    // iconRender: PropTypes.func,
+
+    /** Whether to show toggle button or control password visibility */
+    visibilityToggle: PropTypes.bool,
 
     /** The label text displayed after (on the right side of) the input field */
     addonAfter: PropTypes.node,
@@ -90,12 +94,9 @@ Input.propTypes = {
 
     /** The callback function that is triggered when Enter key is pressed */
     onPressEnter: PropTypes.func,
+
 };
 
-Input.defaultProps = {};
+Password.defaultProps = {};
 
-Input.TextArea = TextArea;
-
-Input.Password = Password;
-
-export default Input;
+export default Password;
