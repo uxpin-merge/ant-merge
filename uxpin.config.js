@@ -104,6 +104,8 @@ module.exports = {
           'src/components/TimePicker/TimePicker.jsx',
           'src/components/TreeSelect/TreeSelect.jsx',
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
+          'src/components/Upload/Upload.jsx',
+          'src/components/Upload/Dragger/Dragger.jsx',
           // AutoComplete
           // Cascader
           // DatePicker
@@ -119,7 +121,7 @@ module.exports = {
           // 
           // Transfer
           // 
-          // Upload
+          // 
         ]
       },
 
