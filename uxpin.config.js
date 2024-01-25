@@ -110,6 +110,7 @@ module.exports = {
           'src/components/Radio/Group/Group.jsx',
           'src/components/Mentions/Mentions.jsx',
           'src/components/Mentions/Option/Option.jsx',
+          'src/components/Input/Input.jsx',
 
           // AutoComplete
           // Cascader
@@ -117,7 +118,7 @@ module.exports = {
           // Form
           // Input
           // 
-          // Mentions
+          // 
           // 
           // 
           // Select
