@@ -72,8 +72,10 @@ Input.propTypes = {
     /** The suffix icon for the Input */
     suffix: PropTypes.node,
 
-    /** The type of input */
-    type: PropTypes.string,
+    /**
+* Type of the `input` element. 
+*/
+    type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date']),
 
     /** The input content value */
     value: PropTypes.string,
