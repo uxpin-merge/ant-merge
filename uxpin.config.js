@@ -119,10 +119,11 @@ module.exports = {
           'src/components/Cascader/Cascader.jsx',
           'src/components/Select/Select.jsx',
           'src/components/Select/Option/Option.jsx',
+          'src/components/AutoComplete/AutoComplete.jsx',
 
           // 'src/components/Cascader/Option/Option.jsx',
 
-          // AutoComplete
+          // 
           // 
           // 
           // 
