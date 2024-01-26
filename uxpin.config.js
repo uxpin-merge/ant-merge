@@ -116,9 +116,13 @@ module.exports = {
           'src/components/Form/Form.jsx',
           'src/components/Form/Item/Item.jsx',
           'src/components/DatePicker/DatePicker.jsx',
+          'src/components/Cascader/Cascader.jsx',
+          'src/components/Select/Select.jsx',
+          'src/components/Select/Option/Option.jsx',
+
+          // 'src/components/Cascader/Option/Option.jsx',
 
           // AutoComplete
-          // Cascader
           // 
           // 
           // 
@@ -126,7 +130,8 @@ module.exports = {
           // 
           // 
           // 
-          // Select
+          // 
+          // 
           // 
           // 
           // 
