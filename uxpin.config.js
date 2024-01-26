@@ -94,53 +94,34 @@ module.exports = {
       {
         name: 'Data Entry',
         include: [
+          'src/components/AutoComplete/AutoComplete.jsx',
+          'src/components/Cascader/Cascader.jsx',
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Checkbox/Group/Group.jsx',
           'src/components/ColorPicker/ColorPicker.jsx',
+          'src/components/DatePicker/DatePicker.jsx',
+          'src/components/Form/Form.jsx',
+          'src/components/Form/Item/Item.jsx',
+          'src/components/Input/Input.jsx',
+          'src/components/Input/Password/Password.jsx',
+          'src/components/Input/TextArea/TextArea.jsx',
           'src/components/InputNumber/InputNumber.jsx',
+          'src/components/Mentions/Mentions.jsx',
+          'src/components/Mentions/Option/Option.jsx',
+          'src/components/Radio/Radio.jsx',
+          'src/components/Radio/Group/Group.jsx',
           'src/components/Rate/Rate.jsx',
+          'src/components/Select/Select.jsx',
+          'src/components/Select/Option/Option.jsx',
           'src/components/Slider/Slider.jsx',
           'src/components/Switch/Switch.jsx',
           'src/components/TimePicker/TimePicker.jsx',
+          'src/components/Transfer/Transfer.jsx',
           'src/components/TreeSelect/TreeSelect.jsx',
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
-          'src/components/Upload/Upload.jsx',
           'src/components/Upload/Dragger/Dragger.jsx',
-          'src/components/Radio/Radio.jsx',
-          'src/components/Radio/Group/Group.jsx',
-          'src/components/Mentions/Mentions.jsx',
-          'src/components/Mentions/Option/Option.jsx',
-          'src/components/Input/Input.jsx',
-          'src/components/Input/TextArea/TextArea.jsx',
-          'src/components/Input/Password/Password.jsx',
-          'src/components/Form/Form.jsx',
-          'src/components/Form/Item/Item.jsx',
-          'src/components/DatePicker/DatePicker.jsx',
-          'src/components/Cascader/Cascader.jsx',
-          'src/components/Select/Select.jsx',
-          'src/components/Select/Option/Option.jsx',
-          'src/components/AutoComplete/AutoComplete.jsx',
-
-          // 'src/components/Cascader/Option/Option.jsx',
-
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // 
-          // Transfer
-          // 
-          // 
         ]
-      },
+      }
 
 
 
