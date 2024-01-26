@@ -37,7 +37,6 @@ module.exports = {
         name: 'Navigation',
         include: [
           'src/components/Anchor/Anchor.jsx',
-          // 'src/components/AnchorItem/AnchorItem.jsx',
           'src/components/Breadcrumb/Breadcrumb.jsx',
           'src/components/Breadcrumb/Item/Item.jsx',
           'src/components/Dropdown/Dropdown.jsx',
@@ -48,6 +47,9 @@ module.exports = {
           'src/components/Pagination/Pagination.jsx',
           'src/components/Steps/Steps.jsx',
           'src/components/Steps/Item/Item.jsx',
+
+          // 'src/components/AnchorItem/AnchorItem.jsx',
+
         ]
       },
       {
@@ -73,23 +75,17 @@ module.exports = {
           'src/components/QRCode/QRCode.jsx',
           'src/components/Segmented/Segmented.jsx',
           'src/components/Statistic/Statistic.jsx',
-
-          //--- 'src/components/Table.jsx',
-
-
           'src/components/Tabs/Tabs.jsx',
           'src/components/Tabs/TabPane/TabPane.jsx',
           'src/components/Tag/Tag.jsx',
           'src/components/Timeline/Timeline.jsx',
           'src/components/Timeline/Item/Item.jsx',
           'src/components/Tooltip/Tooltip.jsx',
-
           'src/components/Tour/Tour.jsx',
+
           // 'src/components/Tour/Step/Step.jsx',
           //--- 'src/components/Tree.jsx',
-
-
-
+          //--- 'src/components/Table.jsx',
         ]
       },
 
