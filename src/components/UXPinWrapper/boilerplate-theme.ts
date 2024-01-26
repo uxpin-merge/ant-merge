@@ -1,6 +1,6 @@
 
 export const theme = {
-  hashed: false,
+  // hashed: false,
   token: {
     // Seed Token
     // colorPrimary: '#00b96b',

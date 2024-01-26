@@ -41,8 +41,10 @@ module.exports = {
           'src/components/Breadcrumb/Breadcrumb.jsx',
           'src/components/Breadcrumb/Item/Item.jsx',
 
-          // 'src/components/Dropdown/Dropdown.jsx',
-          // 'src/components/Menu/Menu.jsx',
+          // 'src/components/Dropdown/Dropdown.jsx', **BUG**
+          'src/components/Menu/Menu.jsx',
+          'src/components/Menu/SubMenu/SubMenu.jsx',
+          'src/components/Menu/Item/Item.jsx',
           'src/components/Pagination/Pagination.jsx',
           'src/components/Steps/Steps.jsx',
           'src/components/Steps/Item/Item.jsx',
