@@ -1,24 +1,52 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Dropdown as ANTComponent } from "antd";
-import Button from "./Button/Button";
 
 /**
- * @uxpindocurl https://ant.design/components/Dropdown/
+ * @uxpindocurl https://ant.design/components/dropdown/
  * @uxpindescription A dropdown list.
+ * @uxpinnamespace Dropdown
  */
 
-const Dropdown = (props) => {
+const Button = (props) => {
     // Component logic
 
     return (
         // Your component JSX
-        <ANTComponent {...props} />
+        <ANTComponent.Button {...props} />
 
     );
 };
 
-Dropdown.propTypes = {
+Button.propTypes = {
+    /** The content of the component. */
+    children: PropTypes.node,
+    /** The menu props */
+    menu: PropTypes.object, // MenuProps
+
+    /** Custom buttons inside Dropdown.Button */
+    buttonsRender: PropTypes.func,
+
+    /** Set the loading status of button */
+    loading: PropTypes.bool,
+
+    /** Set the danger status of button */
+    danger: PropTypes.bool,
+
+    /** Icon (appears on the right) */
+    icon: PropTypes.node,
+
+    /** Size of the button, the same as Button */
+    size: PropTypes.oneOf(['large', 'middle', 'small']),
+
+    /** Type of the button, the same as Button */
+    type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
+
+    /** Called when you click the button on the left */
+    onClick: PropTypes.func,
+
+    /** The style properties of the component */
+    style: PropTypes.object,
     /** The content of the component. */
     children: PropTypes.node,
 
@@ -49,8 +77,7 @@ Dropdown.propTypes = {
     /** To set the container of the dropdown menu */
     getPopupContainer: PropTypes.func,
 
-    /** The menu props */
-    menu: PropTypes.object, // MenuProps
+
 
     /** The class name of the dropdown root element */
     overlayClassName: PropTypes.string,
@@ -71,8 +98,6 @@ Dropdown.propTypes = {
     onOpenChange: PropTypes.func,
 };
 
-Dropdown.defaultProps = {};
+Button.defaultProps = {};
 
-Dropdown.Button = Button;
-
-export default Dropdown;
+export default Button;

@@ -40,8 +40,8 @@ module.exports = {
           // 'src/components/AnchorItem/AnchorItem.jsx',
           'src/components/Breadcrumb/Breadcrumb.jsx',
           'src/components/Breadcrumb/Item/Item.jsx',
-
-          // 'src/components/Dropdown/Dropdown.jsx', **BUG**
+          'src/components/Dropdown/Dropdown.jsx',
+          'src/components/Dropdown/Button/Button.jsx',
           'src/components/Menu/Menu.jsx',
           'src/components/Menu/SubMenu/SubMenu.jsx',
           'src/components/Menu/Item/Item.jsx',
