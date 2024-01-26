@@ -120,6 +120,7 @@ module.exports = {
           'src/components/TreeSelect/TreeSelect.jsx',
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
           'src/components/Upload/Dragger/Dragger.jsx',
+          'src/components/Upload/Upload.jsx',
         ]
       }
 
