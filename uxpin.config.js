@@ -115,10 +115,12 @@ module.exports = {
           'src/components/Input/Password/Password.jsx',
           'src/components/Form/Form.jsx',
           'src/components/Form/Item/Item.jsx',
+          'src/components/DatePicker/DatePicker.jsx',
+
           // AutoComplete
           // Cascader
-          // DatePicker
-          // Form
+          // 
+          // 
           // 
           // 
           // 
