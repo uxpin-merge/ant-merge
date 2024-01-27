@@ -139,7 +139,13 @@ module.exports = {
           'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
         ]
-      }
+      },
+      {
+        name: 'UTILITIES',
+        include: [
+          'src/components/ThemeCustomizer/ThemeCustomizer.js',
+        ]
+      },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'webpack.config.js',
