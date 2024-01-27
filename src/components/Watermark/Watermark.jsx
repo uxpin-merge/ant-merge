@@ -4,7 +4,7 @@ import { Watermark as ANTComponent } from "antd";
 
 /**
  * @uxpindocurl https://ant.design/components/Watermark/
- * @uxpindescription TODO
+ * @uxpindescription Add specific text or patterns to the page
  */
 
 const Watermark = (props) => {
