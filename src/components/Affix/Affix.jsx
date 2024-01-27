@@ -15,7 +15,7 @@ const Affix = (props) => {
         // <div style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}>
 
         <ANTComponent {...props}
-            style={{ position: 'absolute', top: 100, left: 100 }}
+            style={{ position: 'absolute' }}
         // target={() => "#canvas"}
         />
         // </div>
