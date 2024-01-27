@@ -5,30 +5,24 @@ import { Modal as ANTComponent } from "antd";
 /**
  * @uxpindocurl https://ant.design/components/Modal/
  * @uxpindescription TODO
-  * @uxpinuseportal
+* @uxpinuseportal
  */
 
 const Modal = (props) => {
-    const { uxpinRef, ...other } = props;
 
     return (
         // Your component JSX
-        < >
+        <div
+            style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}
+            className="merge-component"
+        >
             <ANTComponent
-                getContainer={false}
-                centered
-                // getContainer="#modalMount"
-                // style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}
-                {...other}
+                getContainer="#modalMount"
+                {...props}
             />
-
-
-            <div id="modalMount" style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}
-            >
-
-
+            <div id="modalMount">
             </div>
-        </>
+        </div>
     );
 };
 
