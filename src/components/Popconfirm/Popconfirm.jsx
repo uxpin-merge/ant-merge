@@ -4,7 +4,7 @@ import { Popconfirm as ANTComponent } from "antd";
 
 /**
  * @uxpindocurl https://ant.design/components/Popconfirm/
- * @uxpindescription TODO
+ * @uxpindescription A simple and compact confirmation dialog of an action.
  */
 
 const Popconfirm = (props) => {
