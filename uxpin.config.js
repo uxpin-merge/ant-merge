@@ -144,6 +144,7 @@ module.exports = {
         name: 'UTILITIES',
         include: [
           'src/components/ThemeCustomizer/ThemeCustomizer.js',
+          'src/components/ConfigProvider/ConfigProvider.jsx',
         ]
       },
     ],
