@@ -15,9 +15,9 @@ const Affix = (props) => {
         // <div style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}>
 
         <ANTComponent {...props}
-            // style={{ position: 'absolute' }}
-            // target={() => document.querySelector(props.targetId)}
-            target={() => null}
+        // style={{ position: 'absolute' }}
+        // target={() => document.querySelector(props.targetId)}
+        // target={() => null}
         />
         // </div>
 
