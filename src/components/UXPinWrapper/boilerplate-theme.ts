@@ -3,7 +3,7 @@ export const theme = {
   // hashed: false,
   token: {
     // Seed Token
-    colorPrimary: '#00b96b',
+    colorPrimary: '#ff0000',
     borderRadius: 2,
 
     // // Alias Token

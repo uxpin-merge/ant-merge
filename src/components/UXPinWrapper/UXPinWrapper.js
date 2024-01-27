@@ -12,5 +12,5 @@ export default function UXPinWrapper({ children }) {
   icons.setAttribute('rel', 'stylesheet');
   document.head.appendChild(icons);
 
-  return (<ConfigProvider >{children}</ConfigProvider>);
+  return (<ConfigProvider theme={theme} >{children}</ConfigProvider>);
 } 
