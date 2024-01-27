@@ -5,7 +5,7 @@ import { Affix as ANTComponent } from "antd";
 /**
  * @uxpindocurl https://ant.design/components/Afix/
  * @uxpindescription Alert component for feedback.
- * @uxpinusssseportal
+ * @uxpinuseportal
  */
 
 const Affix = (props) => {
