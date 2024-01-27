@@ -133,6 +133,9 @@ module.exports = {
           'src/components/Progress/Progress.jsx',
           'src/components/Result/Result.jsx',
           'src/components/Skeleton/Skeleton.jsx',
+          'src/components/Skeleton/Avatar/Avatar.jsx',
+          'src/components/Skeleton/Button/Button.jsx',
+          'src/components/Skeleton/Input/Input.jsx',
           'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
         ]

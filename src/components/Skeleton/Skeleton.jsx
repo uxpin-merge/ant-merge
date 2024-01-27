@@ -1,10 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Skeleton as ANTComponent } from "antd";
+import Avatar from "./Avatar/Avatar";
+import Button from "./Button/Button";
+import Input from "./Input/Input";
 
 /**
  * @uxpindocurl https://ant.design/components/Skeleton/
- * @uxpindescription TODO
+ * @uxpindescription Provide a placeholder while you wait for content to load, or to visualize content that doesn't exist yet.
  */
 
 const Skeleton = (props) => {
@@ -12,22 +15,45 @@ const Skeleton = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props}/>
+        <ANTComponent {...props} />
 
     );
 };
 
-Skeleton.propTypes = { 
-    /** The content of the component. */
-    children: PropTypes.node,
+Skeleton.propTypes = {
+    /** Show animation effect */
+    active: PropTypes.bool,
 
-    /** The style properties of the component */
-    style: PropTypes.object,
+    /** Show avatar placeholder */
+    avatar: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object // SkeletonAvatarProps
+    ]),
 
-    /** Show animation effect */ active: PropTypes.bool, /** Show avatar placeholder */ /** Show animation effect, only valid when used avatar independently */ active: PropTypes.bool, /** Set the shape of avatar */ shape: PropTypes.oneOf(['circle', 'square']), /** Set the size of avatar */ /** Display the skeleton when true */ loading: PropTypes.bool, /** Show paragraph placeholder */ /** Set the row count of paragraph */ rows: PropTypes.number, /** Set the width of paragraph. When width is an Array, it can set the width of each row. Otherwise only set the last row width */ /** Show paragraph and title radius when true */ round: PropTypes.bool, /** Show title placeholder */ /** Set the width of title */ width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    
+    /** Display the skeleton when true */
+    loading: PropTypes.bool,
+
+    /** Show paragraph placeholder */
+    paragraph: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object // SkeletonParagraphProps
+    ]),
+
+    /** Show paragraph and title radius when true */
+    round: PropTypes.bool,
+
+    /** Show title placeholder */
+    title: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.object // SkeletonTitleProps
+    ])
+
 };
 
 Skeleton.defaultProps = {};
+
+Skeleton.Avatar = Avatar;
+Skeleton.Button = Button;
+Skeleton.Input = Input;
 
 export default Skeleton;
