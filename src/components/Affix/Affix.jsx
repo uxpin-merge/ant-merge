@@ -16,7 +16,7 @@ const Affix = (props) => {
 
         <ANTComponent {...props}
             // style={{ position: 'absolute' }}
-            target={() => { props.targetId }}
+            target={() => document.querySelector(props.targetId)}
         />
         // </div>
 
