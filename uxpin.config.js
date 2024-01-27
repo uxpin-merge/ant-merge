@@ -20,6 +20,7 @@ module.exports = {
       {
         name: 'Layout',
         include: [
+          'src/components/Affix/Affix.jsx',
           'src/components/Divider/Divider.jsx',
           'src/components/Flex/Flex.jsx',
           'src/components/Col/Col.jsx',
