@@ -18,7 +18,7 @@ const addFont = (link, index) => {
 /**
  * @uxpinwrappers
  * SkipContainerWrapper, NonResizableWrapper
- * @uxpindescription Use this component to theme this instance of the MUI library
+ * @uxpindescription Use this component to theme this instance of the Ant Design library. Create a theme here: https://ant.design/theme-editor
  */
 function ThemeCustomizer(props) {
   const [themeOptions, setThemeOptions] = React.useContext(ThemeContext);
