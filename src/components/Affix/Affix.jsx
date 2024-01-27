@@ -15,8 +15,8 @@ const Affix = (props) => {
         // <div style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}>
 
         <ANTComponent {...props}
-        // style={{ position: 'absolute' }}
-        // target={() => "#canvas"}
+            // style={{ position: 'absolute' }}
+            target={() => { props.targetId }}
         />
         // </div>
 
@@ -38,6 +38,8 @@ Affix.propTypes = {
 
     /** Specifies the scrollable area DOM node */
     target: PropTypes.func, // () => HTMLElement
+
+    targetId: PropTypes.string,
 
     /** Callback for when Affix state is changed */
     onChange: PropTypes.func // (affixed?: boolean) => void
