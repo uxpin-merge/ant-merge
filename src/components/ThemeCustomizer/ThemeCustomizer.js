@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createTheme } from '@mui/material/styles';
 import { ThemeContext } from '../UXPinWrapper/UXPinWrapper';
-import { Portal } from '@mui/base';
-import { Paper, Alert, Button, AlertTitle } from '@mui/material';
-import ColorLensIcon from '@mui/icons-material/ColorLens';
 
 //Will add custom font links to the header
 const addFont = (link, index) => {

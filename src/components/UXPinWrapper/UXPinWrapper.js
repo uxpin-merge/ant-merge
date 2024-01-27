@@ -1,10 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-// import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import defaultTheme from './boilerplate-theme';
-import { Box } from '@mui/material';
 
 import { ConfigProvider } from 'antd';
 import './index.css'
