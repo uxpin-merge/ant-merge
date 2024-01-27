@@ -58,7 +58,7 @@ Group.propTypes = {
     size: PropTypes.oneOf(['large', 'middle', 'small']),
 
     /** Used for setting the currently selected value
-    * @uxpinbind onChange 0.target.value
+    * @ onChange 0.target.value
     */
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]),
 

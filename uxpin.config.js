@@ -120,11 +120,23 @@ module.exports = {
           'src/components/Upload/Dragger/Dragger.jsx',
           'src/components/Upload/Upload.jsx',
         ]
+      },
+      {
+        name: 'Feedback',
+        include: [
+          'src/components/Alert/Alert.jsx',
+          'src/components/Drawer/Drawer.jsx',
+          // 'src/components/Message/Message.jsx',
+          'src/components/Modal/Modal.jsx',
+          'src/components/Notification/Notification.jsx',
+          'src/components/Popconfirm/Popconfirm.jsx',
+          'src/components/Progress/Progress.jsx',
+          'src/components/Result/Result.jsx',
+          'src/components/Skeleton/Skeleton.jsx',
+          // 'src/components/Spin/Spin.jsx',
+          'src/components/Watermark/Watermark.jsx',
+        ]
       }
-
-
-
-
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'webpack.config.js',
