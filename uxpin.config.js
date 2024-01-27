@@ -133,7 +133,7 @@ module.exports = {
           'src/components/Progress/Progress.jsx',
           'src/components/Result/Result.jsx',
           'src/components/Skeleton/Skeleton.jsx',
-          // 'src/components/Spin/Spin.jsx',
+          'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
         ]
       }
