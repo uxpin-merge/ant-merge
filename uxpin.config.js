@@ -76,6 +76,7 @@ module.exports = {
           'src/components/QRCode/QRCode.jsx',
           'src/components/Segmented/Segmented.jsx',
           'src/components/Statistic/Statistic.jsx',
+          'src/components/Table/Table.jsx',
           'src/components/Tabs/Tabs.jsx',
           'src/components/Tabs/TabPane/TabPane.jsx',
           'src/components/Tag/Tag.jsx',
@@ -86,7 +87,6 @@ module.exports = {
 
           // 'src/components/Tour/Step/Step.jsx',
           //--- 'src/components/Tree.jsx',
-          //--- 'src/components/Table.jsx',
         ]
       },
 
