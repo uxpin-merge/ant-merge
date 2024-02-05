@@ -2,9 +2,9 @@
 
 # MUI + UXPin Merge
 
-Integration of [MUI](https://mui.com/) with UXPin Merge Technology.
+Integration of [Ant Design](https://ant.design/) with UXPin Merge Technology.
 
-## About MUI
+<!-- ## About MUI
 
 MUI (formerly Material-UI) is the React UI library you always wanted. You can implement your own design system, or start with Material Design.
 
@@ -119,4 +119,4 @@ It means that components are going to look and, function (interactions, data) id
 | Tool Bar                 | ✓ Completed    |
 | Tooltip                  | ✓ Completed    |
 | Transfer List            | ✎☏ In Progress |
-| Typography               | ✓ Completed    |
+| Typography               | ✓ Completed    | -->
