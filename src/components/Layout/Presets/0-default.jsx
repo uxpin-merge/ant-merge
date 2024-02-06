@@ -6,7 +6,7 @@ import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
 
 export default (
-  <Layout uxpId="layout-1">
+  <Layout uxpId="layout-1" hasSider={true}>
     <Sider width="25%" style={{ backgroundColor: '#1677ff', color: '#ffffff' }} uxpId="sider-1">
       Sider
     </Sider>
