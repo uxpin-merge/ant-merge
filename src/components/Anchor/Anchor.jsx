@@ -12,7 +12,7 @@ const Anchor = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props} />
+        <ANTComponent {...props}/>
 
     );
 };

@@ -19,6 +19,8 @@ const Content = (props) => {
 };
 
 Content.propTypes = {
+      /** The ID for input */
+      id: PropTypes.string,
     /** The content of the component. */
     children: PropTypes.node,
 

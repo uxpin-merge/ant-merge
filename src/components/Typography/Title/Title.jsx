@@ -15,6 +15,8 @@ const Title = (props) => {
 };
 
 Title.propTypes = {
+        /** The ID for input */
+        id: PropTypes.string,
     /** The content of the Text */
     children: PropTypes.node,
     /** Code style */
