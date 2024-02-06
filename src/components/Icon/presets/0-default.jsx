@@ -3,8 +3,8 @@ import Icon from '../Icon';
 
 export default (
   <Icon
-    icon="AccountBookFilled"
-    style={{ fontSize: "", color: "" }}
+    icon="HomeOutlined"
+    style={{ fontSize: "20px", color: "" }}
     uxpId="icon1"
   />
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Typography as ANTComponent } from "antd";
+import { Typography as ANTComponent, Flex} from "antd";
 
 
 /**
@@ -10,7 +10,7 @@ import { Typography as ANTComponent } from "antd";
  */
 const Link = (props) => {
     return (
-        <ANTComponent.Link {...props} />
+      <Flex><ANTComponent.Link {...props} /></Flex>
     );
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import defaultTheme from './boilerplate-theme';
@@ -55,7 +56,7 @@ export default function UXPinWrapper(props) {
 
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
-      <ConfigProvider theme={themeOptions.theme} >
+      <ConfigProvider theme={themeOptions.theme} {...props} >
         {props.children}
       </ConfigProvider>
     </ThemeContext.Provider>

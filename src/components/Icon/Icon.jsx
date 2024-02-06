@@ -4,17 +4,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Icons from '@ant-design/icons';
+import { Flex } from 'antd';
 /**
  * @uxpindocurl https://ant.design/components/icon
  * @uxpindescription Icons from @ant-design/icons. You can still set style property for size and color of icons.
  */
+/**
+ * @uxpinwrappers
+ * SkipContainerWrapper, NonResizableWrapper
+ */
 export default function Icon(props) {
-  return React.createElement(Icons[props.icon], { ...props });
+  return React.createElement(Icons[props.icon], { ...props })
 }
 
 Icon.propTypes = {
   /** Size of the icon */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  // size: PropTypes.oneOf(['small', 'medium', 'large']),
 
   /**
    * The name of the icon. See:https://ant.design/components/icon

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Typography as ANTComponent } from "antd";
+import { Typography as ANTComponent, Flex } from "antd";
 import Link from './Link/Link';
 import Text from './Text/Text';
 import Title from './Title/Title';
@@ -16,7 +16,7 @@ const Typography = (props) => {
     // Component logic
 
     return (
-        <ANTComponent{...props}>{props.children}</ANTComponent>
+      <Flex><ANTComponent{...props}>{props.children}</ANTComponent></Flex>
     );
 };
 
