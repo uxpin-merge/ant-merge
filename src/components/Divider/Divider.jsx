@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Divider as ANTComponent } from "antd";
+import { Divider as ANTComponent, Flex } from "antd";
 
 /**
  * @uxpindocurl https://ant.design/components/Divider/
@@ -12,7 +12,7 @@ const Divider = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props} />
+        <Flex><ANTComponent {...props} /></Flex>
 
     );
 };
