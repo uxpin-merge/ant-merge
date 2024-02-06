@@ -7,13 +7,13 @@ import Footer from '../Footer/Footer';
 
 export default (
   <Layout uxpId="layout-1">
-    <Sider width="25%" uxpId="sider-1" >
+    <Sider width="25%" style={{ backgroundColor: '#1677ff', color: '#ffffff' }} uxpId="sider-1">
       Sider
     </Sider>
     <Layout uxpId="layout-2">
-      <Header uxpId="header-1">Header</Header>
-      <Content uxpId="content-1">Content</Content>
-      <Footer uxpId="footer-1">Footer</Footer>
+      <Header style={{ backgroundColor: '#4096ff', color: '#ffffff' }} uxpId="header-1" >Header</Header>
+      <Content style={{ backgroundColor: '#0958d9', color: '#ffffff' }} uxpId="content-1">Content</Content>
+      <Footer style={{ backgroundColor: '#4096ff', color: '#ffffff' }} uxpId="footer-1">Footer</Footer>
     </Layout>
   </Layout>
 );
