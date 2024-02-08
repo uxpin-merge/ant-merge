@@ -26,10 +26,7 @@ Dropdown.propTypes = {
     style: PropTypes.object,
 
     /** Whether the dropdown arrow should be visible */
-    arrow: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.shape({ pointAtCenter: PropTypes.bool })
-    ]),
+    arrow: PropTypes.bool,
 
     /** Whether to adjust dropdown placement automatically when dropdown is off screen */
     autoAdjustOverflow: PropTypes.bool,
@@ -59,10 +56,10 @@ Dropdown.propTypes = {
     overlayStyle: PropTypes.object,
 
     /** Placement of popup menu */
-    placement: PropTypes.string,
+    placement: PropTypes.oneOf(['bottomLeft', 'bottom', 'bottomRight', 'topLeft', 'top', 'topRight']),
 
     /** The trigger mode which executes the dropdown action */
-    trigger: PropTypes.arrayOf(PropTypes.oneOf(['click', 'hover', 'contextMenu'])),
+    trigger: PropTypes.oneOf(['click', 'hover', 'contextMenu']),
 
     /** Whether the dropdown menu is currently open */
     open: PropTypes.bool,
