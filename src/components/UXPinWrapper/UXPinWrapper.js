@@ -58,11 +58,10 @@ export default function UXPinWrapper(props) {
   });
 
   return (
-   <div>{props.children}</div>
-    // <ThemeContext.Provider value={[theme, setThemeOptions]}>
-    //   <ConfigProvider theme={themeOptions.theme} {...props} >
-    //     {props.children}
-    //   </ConfigProvider>
-    // </ThemeContext.Provider>
+    <ThemeContext.Provider value={[theme, setThemeOptions]}>
+      <ConfigProvider theme={themeOptions.theme} {...props} >
+        {props.children}
+      </ConfigProvider>
+    </ThemeContext.Provider>
   );
 }
