@@ -4,7 +4,10 @@ import React from 'react';
 import defaultTheme from './boilerplate-theme';
 
 import { ConfigProvider } from 'antd';
-// import './index.css'
+import './index.css'
+
+// import "antd/dist/reset.css";
+
 
 
 export const ThemeContext = React.createContext({});
@@ -55,10 +58,11 @@ export default function UXPinWrapper(props) {
   });
 
   return (
-    <ThemeContext.Provider value={[theme, setThemeOptions]}>
-      <ConfigProvider theme={themeOptions.theme} {...props} >
-        {props.children}
-      </ConfigProvider>
-    </ThemeContext.Provider>
+   <div>{props.children}</div>
+    // <ThemeContext.Provider value={[theme, setThemeOptions]}>
+    //   <ConfigProvider theme={themeOptions.theme} {...props} >
+    //     {props.children}
+    //   </ConfigProvider>
+    // </ThemeContext.Provider>
   );
 }
