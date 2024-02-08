@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Col as ANTComponent } from "antd";
 
 /**
- * @uxpindocurl https://ant.design/components/Col/
- * @uxpindescription TODO
+ * @uxpindocurl https://ant.design/components/grid/
+ * @uxpindescription In the grid system, we define the frame outside the information area based on row and column, to ensure that every area can have stable arrangement.
  */
 
 const Col = (props) => {
