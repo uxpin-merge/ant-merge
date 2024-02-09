@@ -98,6 +98,9 @@ Cascader.propTypes = {
     /** Max tag text length to show */
     maxTagTextLength: PropTypes.number,
 
+    /** Support multiple or not */
+    multiple: PropTypes.bool,
+
     /** Specify content to show when no result matches */
     notFoundContent: PropTypes.string,
 
@@ -125,8 +128,6 @@ Cascader.propTypes = {
     /** Set validation status */
     status: PropTypes.oneOf(['error', 'warning']),
 
-    /** The additional style */
-    style: PropTypes.object,
 
     /** The custom suffix icon */
     suffixIcon: PropTypes.node,
@@ -146,8 +147,7 @@ Cascader.propTypes = {
     /** Callback when popup shown or hidden */
     onDropdownVisibleChange: PropTypes.func,
 
-    /** Support multiple or not */
-    multiple: PropTypes.bool,
+
 
     /** The custom remove icon */
     removeIcon: PropTypes.node,
