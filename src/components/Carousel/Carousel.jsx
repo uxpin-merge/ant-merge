@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Carousel as ANTComponent } from "antd";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Carousel as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/carousel/
@@ -10,63 +10,61 @@ import { Carousel as ANTComponent } from "antd";
  */
 
 const Carousel = (props) => {
-    // Component logic
-    const onChange = (currentSlide) => {
-        console.log(currentSlide);
-    };
+  // Component logic
+  const onChange = (currentSlide) => {
+    console.log(currentSlide)
+  }
 
-    return (
-        // Your component JSX
-        <ANTComponent {...props} afterChange={onChange} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent {...props} afterChange={onChange} />
+  )
+}
 
 Carousel.propTypes = {
+  /** Callback function called after the current index changes */
+  afterChange: PropTypes.func,
 
-    /** Callback function called after the current index changes */
-    afterChange: PropTypes.func,
+  /** Whether to scroll automatically */
+  autoplay: PropTypes.bool,
 
-    /** Whether to scroll automatically */
-    autoplay: PropTypes.bool,
+  /** Delay between each auto scroll (in milliseconds) */
+  autoplaySpeed: PropTypes.number,
 
-    /** Delay between each auto scroll (in milliseconds) */
-    autoplaySpeed: PropTypes.number,
+  /** Callback function called before the current index changes */
+  beforeChange: PropTypes.func,
 
-    /** Callback function called before the current index changes */
-    beforeChange: PropTypes.func,
+  /** Set the component that will be rendered */
+  children: PropTypes.node,
 
-    /** Set the component that will be rendered */
-    children: PropTypes.node,
+  /** Dot position: top, bottom, left, or right */
+  dotPosition: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
 
-    /** Dot position: top, bottom, left, or right */
-    dotPosition: PropTypes.string,
+  /** Whether to show the dots at the bottom of the gallery, object for dotsClass and any others */
+  dots: PropTypes.bool,
 
-    /** Whether to show the dots at the bottom of the gallery, object for dotsClass and any others */
-    dots: PropTypes.bool,
+  /** Transition effect: scrollx or fade */
+  effect: PropTypes.oneOf(['scrollx', 'fade']),
 
-    /** Transition effect: scrollx or fade */
-    effect: PropTypes.oneOf(['scrollx', 'fade']),
+  /** Transition interpolation function name */
+  easing: PropTypes.string,
 
-    /** Transition interpolation function name */
-    easing: PropTypes.string,
+  /** Whether to use fade transition */
+  fade: PropTypes.bool,
 
-    /** Whether to use fade transition */
-    fade: PropTypes.bool,
+  /** Infinitely wrap around contents */
+  infinite: PropTypes.bool,
 
-    /** Infinitely wrap around contents */
-    infinite: PropTypes.bool,
+  /** Animation speed in milliseconds */
+  speed: PropTypes.number,
 
-    /** Animation speed in milliseconds */
-    speed: PropTypes.number,
+  /** The style properties of the component */
+  style: PropTypes.object,
 
-    /** The style properties of the component */
-    style: PropTypes.object,
+  /** Whether to wait for the animation when switching */
+  waitForAnimate: PropTypes.bool,
+}
 
-    /** Whether to wait for the animation when switching */
-    waitForAnimate: PropTypes.bool,
-};
+Carousel.defaultProps = {}
 
-Carousel.defaultProps = {};
-
-export default Carousel;
+export default Carousel
