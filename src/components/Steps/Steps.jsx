@@ -13,7 +13,7 @@ const Steps = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props} />
+        <div><ANTComponent {...props} /></div>
 
     );
 };
