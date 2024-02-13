@@ -51,6 +51,8 @@ Progress.propTypes = {
   strokeWidth: PropTypes.number,
   /** The color of progress bar */
   strokeColor: PropTypes.string,
+  /** Configs of successfully progress bar	 */
+  success: PropTypes.object,
   /** The color of unfilled part */
   trailColor: PropTypes.string,
   /** Progress size */
