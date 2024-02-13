@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Progress as ANTComponent } from 'antd'
+import { Progress as ANTComponent, Flex } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Progress/
@@ -12,13 +12,15 @@ const Progress = (props) => {
 
   return (
     // Your component JSX
-    <ANTComponent {...props} />
+    <Flex>
+      <ANTComponent {...props} />
+    </Flex>
   )
 }
 
 Progress.propTypes = {
   /** The content of the component. */
-  children: PropTypes.node,
+  // children: PropTypes.node,
 
   /** The style properties of the component */
   style: PropTypes.object,
