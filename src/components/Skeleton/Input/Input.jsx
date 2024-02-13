@@ -1,31 +1,33 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Skeleton as ANTComponent } from "antd";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Skeleton as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Skeleton/
  * @uxpindescription Provide a placeholder while you wait for content to load, or to visualize content that doesn't exist yet.
-  * @uxpinnamespace Skeleton
+ * @uxpinnamespace Skeleton
  */
 
 const Input = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        <ANTComponent.Input {...props} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent.Input {...props} />
+  )
+}
 
 Input.propTypes = {
-    /** Show animation effect */
-    active: PropTypes.bool,
+  /** The style properties of the component */
+  style: PropTypes.object,
 
-    /** Set the size of input */
-    size: PropTypes.oneOf(['large', 'small', 'default'])
-};
+  /** Show animation effect */
+  active: PropTypes.bool,
 
-Input.defaultProps = {};
+  /** Set the size of input */
+  size: PropTypes.oneOf(['large', 'small', 'default']),
+}
 
-export default Input;
+Input.defaultProps = {}
+
+export default Input

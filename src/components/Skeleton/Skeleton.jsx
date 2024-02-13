@@ -43,6 +43,9 @@ Skeleton.propTypes = {
   /** Show paragraph and title radius when true */
   round: PropTypes.bool,
 
+  /** The style properties of the component */
+  style: PropTypes.object,
+
   /** Show title placeholder */
   title: PropTypes.oneOfType([
     PropTypes.bool,
