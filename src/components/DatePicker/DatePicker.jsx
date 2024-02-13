@@ -7,7 +7,7 @@ import customParseFormat from 'dayjs/plugin/customParseFormat'
 dayjs.extend(customParseFormat)
 /**
  * @uxpindocurl https://ant.design/components/DatePicker/
- * @uxpindescription TODO
+ * @uxpindescription To select or input a date.
  */
 
 const DatePicker = (props) => {

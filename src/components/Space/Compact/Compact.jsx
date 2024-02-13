@@ -1,42 +1,39 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Space as ANTComponent } from "antd";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Space as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Space/
- * @uxpindescription TODO
+ * @uxpindescription Set compact components spacing.
  * @uxpinnamespace Space
  */
 
 const Compact = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        <ANTComponent.Compact {...props} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent.Compact {...props} />
+  )
+}
 
 Compact.propTypes = {
+  /** Option to fit width to its parent's width */
+  block: PropTypes.bool,
 
-    /** Option to fit width to its parent's width */
-    block: PropTypes.bool,
+  /** The content of the component. */
+  children: PropTypes.node,
 
-    /** The content of the component. */
-    children: PropTypes.node,
+  /** Set direction of layout */
+  direction: PropTypes.oneOf(['vertical', 'horizontal']),
 
-    /** Set direction of layout */
-    direction: PropTypes.oneOf(['vertical', 'horizontal']),
+  /** Set child component size */
+  size: PropTypes.oneOf(['large', 'middle', 'small']),
 
-    /** Set child component size */
-    size: PropTypes.oneOf(['large', 'middle', 'small']),
+  /** The style properties of the component */
+  style: PropTypes.object,
+}
 
+Compact.defaultProps = {}
 
-    /** The style properties of the component */
-    style: PropTypes.object,
-};
-
-Compact.defaultProps = {};
-
-export default Compact;
+export default Compact

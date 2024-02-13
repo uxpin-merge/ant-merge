@@ -4,7 +4,7 @@ import { Tooltip as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Tooltip/
- * @uxpindescription TODO
+ * @uxpindescription A simple text popup tip.
  */
 
 const Tooltip = (props) => {

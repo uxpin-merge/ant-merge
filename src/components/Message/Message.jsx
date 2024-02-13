@@ -1,21 +1,20 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { message as ANTComponent } from "antd";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { message as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Message/
- * @uxpindescription TODO
+ * @uxpindescription Display global messages as feedback in response to user operations.
  */
 
 const Message = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        message.info('This is a normal message')
-
-    );
-};
+  return (
+    // Your component JSX
+    message.info('This is a normal message')
+  )
+}
 
 // Message.propTypes = {
 //     /** The content of the component. */
@@ -28,6 +27,6 @@ const Message = (props) => {
 
 // };
 
-Message.defaultProps = {};
+Message.defaultProps = {}
 
-export default Message;
+export default Message

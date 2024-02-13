@@ -4,7 +4,7 @@ import { Image as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Image/
- * @uxpindescription TODO
+ * @uxpindescription Previewable image.
  */
 
 const Image = (props) => {
