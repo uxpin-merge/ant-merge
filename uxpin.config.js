@@ -135,6 +135,8 @@ module.exports = {
           'src/components/Skeleton/Avatar/Avatar.jsx',
           'src/components/Skeleton/Button/Button.jsx',
           'src/components/Skeleton/Input/Input.jsx',
+          'src/components/Skeleton/Image/Image.jsx',
+          'src/components/Skeleton/Node/Node.jsx',
           'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
         ]

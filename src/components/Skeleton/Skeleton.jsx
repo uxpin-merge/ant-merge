@@ -1,9 +1,11 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Skeleton as ANTComponent } from "antd";
-import Avatar from "./Avatar/Avatar";
-import Button from "./Button/Button";
-import Input from "./Input/Input";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Skeleton as ANTComponent } from 'antd'
+import Avatar from './Avatar/Avatar'
+import Button from './Button/Button'
+import Input from './Input/Input'
+import Image from './Image/Image'
+import Node from './Node/Node'
 
 /**
  * @uxpindocurl https://ant.design/components/Skeleton/
@@ -11,49 +13,49 @@ import Input from "./Input/Input";
  */
 
 const Skeleton = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent {...props} />
+  )
+}
 
 Skeleton.propTypes = {
-    /** Show animation effect */
-    active: PropTypes.bool,
+  /** Show animation effect */
+  active: PropTypes.bool,
 
-    /** Show avatar placeholder */
-    avatar: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.object // SkeletonAvatarProps
-    ]),
+  /** Show avatar placeholder */
+  avatar: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.object, // SkeletonAvatarProps
+  ]),
 
-    /** Display the skeleton when true */
-    loading: PropTypes.bool,
+  /** Display the skeleton when true */
+  loading: PropTypes.bool,
 
-    /** Show paragraph placeholder */
-    paragraph: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.object // SkeletonParagraphProps
-    ]),
+  /** Show paragraph placeholder */
+  paragraph: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.object, // SkeletonParagraphProps
+  ]),
 
-    /** Show paragraph and title radius when true */
-    round: PropTypes.bool,
+  /** Show paragraph and title radius when true */
+  round: PropTypes.bool,
 
-    /** Show title placeholder */
-    title: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.object // SkeletonTitleProps
-    ])
+  /** Show title placeholder */
+  title: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.object, // SkeletonTitleProps
+  ]),
+}
 
-};
+Skeleton.defaultProps = {}
 
-Skeleton.defaultProps = {};
+Skeleton.Avatar = Avatar
+Skeleton.Button = Button
+Skeleton.Input = Input
+Skeleton.Image = Image
+Skeleton.Node = Node
 
-Skeleton.Avatar = Avatar;
-Skeleton.Button = Button;
-Skeleton.Input = Input;
-
-export default Skeleton;
+export default Skeleton
