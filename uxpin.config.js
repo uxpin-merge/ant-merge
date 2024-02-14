@@ -102,6 +102,7 @@ module.exports = {
           'src/components/Input/Input.jsx',
           'src/components/Input/Password/Password.jsx',
           'src/components/Input/TextArea/TextArea.jsx',
+          'src/components/Input/Search/Search.jsx',
           'src/components/InputNumber/InputNumber.jsx',
           'src/components/Mentions/Mentions.jsx',
           'src/components/Mentions/Option/Option.jsx',

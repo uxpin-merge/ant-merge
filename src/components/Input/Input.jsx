@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Input as ANTComponent } from 'antd'
 import TextArea from './TextArea/TextArea'
 import Password from './Password/Password'
+import Search from './Search/Search'
 
 /**
  * @uxpindocurl https://ant.design/components/Input/
@@ -100,5 +101,7 @@ Input.defaultProps = {}
 Input.TextArea = TextArea
 
 Input.Password = Password
+
+Input.Search = Search
 
 export default Input
