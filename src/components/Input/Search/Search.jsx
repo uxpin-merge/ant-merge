@@ -61,6 +61,9 @@ Search.propTypes = {
   /**  The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key	 */
   onSeacrh: PropTypes.func,
 
+  /** Placeholder text for the Input */
+  placeholder: PropTypes.string,
+
   /**  The prefix icon for the Input */
   prefix: PropTypes.node,
 
