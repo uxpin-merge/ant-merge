@@ -80,7 +80,9 @@ Input.propTypes = {
    */
   type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date']),
 
-  /** The input content value */
+  /** The input content value
+   * @uxpinbind onChange 0.target.value
+   */
   value: PropTypes.string,
 
   /** Variants of Input */
