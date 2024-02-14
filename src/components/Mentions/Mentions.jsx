@@ -97,6 +97,9 @@ Mentions.propTypes = {
 
   /**  Specifies that a text area should be read-only */
   readOnly: PropTypes.bool,
+
+  /**  Whether the input is disabled */
+  disabled: PropTypes.bool,
 }
 
 Mentions.defaultProps = {}
