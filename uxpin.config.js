@@ -14,7 +14,6 @@ module.exports = {
           'src/components/Typography/Link/Link.jsx',
           'src/components/Typography/Title/Title.jsx',
           'src/components/Typography/Paragraph/Paragraph.jsx',
-
         ]
       },
       {
@@ -54,41 +53,6 @@ module.exports = {
         ]
       },
       {
-        name: 'Data Display',
-        include: [
-          'src/components/Avatar/Avatar.jsx',
-          'src/components/Avatar/Group/Group.jsx',
-          'src/components/Badge/Badge.jsx',
-          'src/components/Badge/Ribbon/Ribbon.jsx',
-          'src/components/Card/Card.jsx',
-          'src/components/Card/Grid/Grid.jsx',
-          'src/components/Carousel/Carousel.jsx',
-          'src/components/Collapse/Collapse.jsx',
-          'src/components/Collapse/Panel/Panel.jsx',
-          'src/components/Descriptions/Descriptions.jsx',
-          'src/components/Descriptions/Item/Item.jsx',
-          'src/components/Calendar/Calendar.jsx',
-          'src/components/Empty/Empty.jsx',
-          'src/components/Image/Image.jsx',
-          'src/components/List/List.jsx',
-          'src/components/List/Item/Item.jsx',
-          'src/components/Popover/Popover.jsx',
-          'src/components/QRCode/QRCode.jsx',
-          'src/components/Segmented/Segmented.jsx',
-          'src/components/Statistic/Statistic.jsx',
-          'src/components/Table/Table.jsx',
-          'src/components/Tabs/Tabs.jsx',
-          'src/components/Tabs/TabPane/TabPane.jsx',
-          'src/components/Tag/Tag.jsx',
-          'src/components/Timeline/Timeline.jsx',
-          'src/components/Timeline/Item/Item.jsx',
-          'src/components/Tooltip/Tooltip.jsx',
-          'src/components/Tour/Tour.jsx',
-          'src/components/Tree/Tree.jsx',
-        ]
-      },
-
-      {
         name: 'Data Entry',
         include: [
           'src/components/AutoComplete/AutoComplete.jsx',
@@ -119,10 +83,46 @@ module.exports = {
           'src/components/Transfer/Transfer.jsx',
           'src/components/TreeSelect/TreeSelect.jsx',
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
-          'src/components/Upload/Dragger/Dragger.jsx',
           'src/components/Upload/Upload.jsx',
+          'src/components/Upload/Dragger/Dragger.jsx',
         ]
       },
+      {
+        name: 'Data Display',
+        include: [
+          'src/components/Avatar/Avatar.jsx',
+          'src/components/Avatar/Group/Group.jsx',
+          'src/components/Badge/Badge.jsx',
+          'src/components/Badge/Ribbon/Ribbon.jsx',
+          'src/components/Calendar/Calendar.jsx',
+          'src/components/Card/Card.jsx',
+          'src/components/Card/Grid/Grid.jsx',
+          'src/components/Carousel/Carousel.jsx',
+          'src/components/Collapse/Collapse.jsx',
+          'src/components/Collapse/Panel/Panel.jsx',
+          'src/components/Descriptions/Descriptions.jsx',
+          'src/components/Descriptions/Item/Item.jsx',
+          'src/components/Empty/Empty.jsx',
+          'src/components/Image/Image.jsx',
+          'src/components/List/List.jsx',
+          'src/components/List/Item/Item.jsx',
+          'src/components/Popover/Popover.jsx',
+          'src/components/QRCode/QRCode.jsx',
+          'src/components/Segmented/Segmented.jsx',
+          'src/components/Statistic/Statistic.jsx',
+          'src/components/Table/Table.jsx',
+          'src/components/Tabs/Tabs.jsx',
+          'src/components/Tabs/TabPane/TabPane.jsx',
+          'src/components/Tag/Tag.jsx',
+          'src/components/Timeline/Timeline.jsx',
+          'src/components/Timeline/Item/Item.jsx',
+          'src/components/Tooltip/Tooltip.jsx',
+          'src/components/Tour/Tour.jsx',
+          'src/components/Tree/Tree.jsx',
+        ]
+      },
+
+
       {
         name: 'Feedback',
         include: [
@@ -137,8 +137,8 @@ module.exports = {
           'src/components/Skeleton/Skeleton.jsx',
           'src/components/Skeleton/Avatar/Avatar.jsx',
           'src/components/Skeleton/Button/Button.jsx',
-          'src/components/Skeleton/Input/Input.jsx',
           'src/components/Skeleton/Image/Image.jsx',
+          'src/components/Skeleton/Input/Input.jsx',
           'src/components/Skeleton/Node/Node.jsx',
           'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
