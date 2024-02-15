@@ -108,6 +108,7 @@ module.exports = {
           'src/components/Mentions/Option/Option.jsx',
           'src/components/Radio/Radio.jsx',
           'src/components/Radio/Group/Group.jsx',
+          'src/components/Radio/Button/Button.jsx',
           'src/components/Rate/Rate.jsx',
           'src/components/Select/Select.jsx',
           'src/components/Select/Option/Option.jsx',

@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Radio as ANTComponent } from 'antd'
-import Group from './Group/Group'
-import Button from './Button/Button'
 
 /**
- * @uxpindocurl https://ant.design/components/radio/
- * @uxpindescription Radio component.
+ * @uxpindocurl https://ant.design/components/Checkbox/
+ * @uxpindescription Generate a group of Radios.
+ * @uxpinnamespace Radio
  */
 
-const Radio = (props) => {
+const Button = (props) => {
   // Component logic
 
   return (
     // Your component JSX
-    <ANTComponent {...props} />
+    <ANTComponent.Button {...props} />
   )
 }
 
-Radio.propTypes = {
+Button.propTypes = {
   /** The content of the component. */
   children: PropTypes.node,
 
@@ -36,10 +35,6 @@ Radio.propTypes = {
   ]),
 }
 
-Radio.defaultProps = {}
+Button.defaultProps = {}
 
-Radio.Group = Group
-
-Radio.Button = Button
-
-export default Radio
+export default Button
