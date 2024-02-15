@@ -25,7 +25,7 @@ Mentions.propTypes = {
   style: PropTypes.object,
 
   /** Show clear button */
-  allowClear: PropTypes.oneOfType([PropTypes.bool, PropTypes.shape({ clearIcon: PropTypes.node })]),
+  allowClear: PropTypes.bool,
 
   /** Auto get focus when component mounted */
   autoFocus: PropTypes.bool,
