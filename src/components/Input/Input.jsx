@@ -66,9 +66,11 @@ Input.propTypes = {
 
   /** Set validation status */
   status: PropTypes.oneOf(['error', 'warning']),
+  /** Style override css for the component */
+  style: PropTypes.object,
 
   /** Semantic DOM style */
-  styles: PropTypes.objectOf(PropTypes.object), // CSSProperties
+  styles: PropTypes.object, // CSSProperties
 
   /** The size of the input box */
   size: PropTypes.oneOf(['large', 'middle', 'small']),
@@ -96,7 +98,14 @@ Input.propTypes = {
   onPressEnter: PropTypes.func,
 }
 
-Input.defaultProps = {}
+Input.defaultProps = {
+  styles: {
+    input: {},
+    prefix: {},
+    suffix: {},
+    count: {},
+  },
+}
 
 Input.TextArea = TextArea
 

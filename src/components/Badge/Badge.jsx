@@ -19,6 +19,10 @@ const Badge = (props) => {
 Badge.propTypes = {
   /** The content of the component. */
   children: PropTypes.node,
+
+  /** The style properties of the component */
+  style: PropTypes.object,
+
   /** Customize Badge dot color
    * @uxpincontroltype color
    */
@@ -58,7 +62,12 @@ Badge.propTypes = {
   title: PropTypes.string,
 }
 
-Badge.defaultProps = {}
+Badge.defaultProps = {
+  styles: {
+    root: {},
+    indicator: {},
+  },
+}
 
 Badge.Ribbon = Ribbon
 

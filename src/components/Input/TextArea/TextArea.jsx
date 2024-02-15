@@ -80,9 +80,10 @@ TextArea.propTypes = {
 
   /**  Set validation status */
   status: PropTypes.oneOf(['error', 'warning']),
-
+  /** Style override css for the component */
+  style: PropTypes.object,
   /**  Semantic DOM style */
-  styles: PropTypes.objectOf(PropTypes.object),
+  styles: PropTypes.object,
 
   /**  The suffix icon for the Input */
   suffix: PropTypes.node,
@@ -97,6 +98,11 @@ TextArea.propTypes = {
   variant: PropTypes.oneOf(['outlined', 'borderless', 'filled']),
 }
 
-TextArea.defaultProps = {}
+TextArea.defaultProps = {
+  styles: {
+    textarea: {},
+    count: {},
+  },
+}
 
 export default TextArea

@@ -66,9 +66,11 @@ Password.propTypes = {
 
   /** Set validation status */
   status: PropTypes.oneOf(['error', 'warning']),
+  /** Style override css for the component */
+  style: PropTypes.object,
 
   /** Semantic DOM style */
-  styles: PropTypes.objectOf(PropTypes.object), // CSSProperties
+  styles: PropTypes.object, // CSSProperties
 
   /** The size of the input box */
   size: PropTypes.oneOf(['large', 'middle', 'small']),
@@ -94,6 +96,13 @@ Password.propTypes = {
   onPressEnter: PropTypes.func,
 }
 
-Password.defaultProps = {}
+Password.defaultProps = {
+  styles: {
+    input: {},
+    prefix: {},
+    suffix: {},
+    count: {},
+  },
+}
 
 export default Password

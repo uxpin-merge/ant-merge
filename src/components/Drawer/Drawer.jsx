@@ -46,14 +46,7 @@ Drawer.propTypes = {
   }),
 
   /** Config Drawer build-in module's style */
-  styles: PropTypes.shape({
-    header: PropTypes.object, // CSSProperties
-    body: PropTypes.object, // CSSProperties
-    footer: PropTypes.object, // CSSProperties
-    mask: PropTypes.object, // CSSProperties
-    content: PropTypes.object, // CSSProperties
-    wrapper: PropTypes.object, // CSSProperties
-  }),
+  styles: PropTypes.object,
 
   /** Custom close icon */
   closeIcon: PropTypes.oneOfType([PropTypes.bool, PropTypes.node]),
@@ -124,6 +117,15 @@ Drawer.propTypes = {
   onClose: PropTypes.func,
 }
 
-Drawer.defaultProps = {}
+Drawer.defaultProps = {
+  styles: {
+    header: {},
+    body: {},
+    footer: {},
+    mask: {},
+    content: {},
+    wrapper: {},
+  },
+}
 
 export default Drawer

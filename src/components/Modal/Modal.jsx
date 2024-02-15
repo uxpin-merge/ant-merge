@@ -38,14 +38,6 @@ Modal.propTypes = {
     wrapper: PropTypes.string,
   }),
 
-  /** Config Modal build-in module's style */
-  styles: PropTypes.shape({
-    header: PropTypes.object, // CSSProperties
-    body: PropTypes.object, // CSSProperties
-    footer: PropTypes.object, // CSSProperties
-    mask: PropTypes.object, // CSSProperties
-  }),
-
   /** The cancel button props */
   cancelButtonProps: PropTypes.object, // ButtonProps
 
@@ -100,6 +92,9 @@ Modal.propTypes = {
   /** Style of floating layer */
   style: PropTypes.object, // CSSProperties
 
+  /** Config Modal build-in module's style */
+  styles: PropTypes.object,
+
   /** The modal dialog's title */
   title: PropTypes.node,
 
@@ -127,6 +122,13 @@ Modal.propTypes = {
   afterOpenChange: PropTypes.func,
 }
 
-Modal.defaultProps = {}
+Modal.defaultProps = {
+  styles: {
+    header: {},
+    body: {},
+    footer: {},
+    mask: {},
+  },
+}
 
 export default Modal

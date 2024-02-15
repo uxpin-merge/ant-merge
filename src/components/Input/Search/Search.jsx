@@ -89,9 +89,11 @@ Search.propTypes = {
 
   /**  Set validation status */
   status: PropTypes.oneOf(['error', 'warning']),
+  /** Style override css for the component */
+  style: PropTypes.object,
 
   /**  Semantic DOM style */
-  styles: PropTypes.objectOf(PropTypes.object),
+  styles: PropTypes.object,
 
   /**  The suffix icon for the Input */
   suffix: PropTypes.node,
@@ -106,6 +108,13 @@ Search.propTypes = {
   variant: PropTypes.oneOf(['outlined', 'borderless', 'filled']),
 }
 
-Search.defaultProps = {}
+Search.defaultProps = {
+  styles: {
+    input: {},
+    prefix: {},
+    suffix: {},
+    count: {},
+  },
+}
 
 export default Search
