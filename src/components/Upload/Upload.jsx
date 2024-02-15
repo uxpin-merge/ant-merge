@@ -50,7 +50,9 @@ Upload.propTypes = {
   /** Disable upload button */
   disabled: PropTypes.bool,
 
-  /** List of files that have been uploaded (controlled) */
+  /** List of files that have been uploaded (controlled)
+   * @uxpinbind onChange 0.fileList
+   */
   fileList: PropTypes.arrayOf(PropTypes.object),
 
   /** Set request headers */
