@@ -58,11 +58,11 @@ export default function UXPinWrapper(props) {
 
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
-      <StyleProvider hashPriority="high">
-      <ConfigProvider theme={themeOptions.theme} {...props} >
+      {/* <StyleProvider hashPriority="high"> */}
+      <ConfigProvider theme={themeOptions.theme} {...props} hashPriority="high" >
         {props.children}
       </ConfigProvider>
-      </StyleProvider>
+      {/* </StyleProvider> */}
     </ThemeContext.Provider>
   );
 }
