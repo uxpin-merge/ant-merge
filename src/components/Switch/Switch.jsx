@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Switch as ANTComponent } from "antd";
-
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Switch as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Switch/
@@ -9,69 +8,64 @@ import { Switch as ANTComponent } from "antd";
  */
 
 const Switch = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent {...props} />
+  )
+}
 
 Switch.propTypes = {
+  /** The content of the component. */
+  children: PropTypes.node,
 
-    /** The content of the component. */
-    children: PropTypes.node,
+  /** The style properties of the component */
+  style: PropTypes.object,
 
+  /** Whether get focus when component mounted */
+  autoFocus: PropTypes.bool,
 
-    /** The style properties of the component */
-    style: PropTypes.object,
+  /** Determine whether the Switch is checked
+   * @uxpinbind onChange 0
+   */
+  checked: PropTypes.bool,
 
+  /** The content to be shown when the state is checked */
+  checkedChildren: PropTypes.node,
 
-    /** Whether get focus when component mounted */
-    autoFocus: PropTypes.bool,
+  /** The additional class to Switch */
+  className: PropTypes.string,
 
-    /** Determine whether the Switch is checked
-     * @uxpinbind onChange 0
-    */
-    checked: PropTypes.bool,
+  /** Whether to set the initial state */
+  defaultChecked: PropTypes.bool,
 
-    /** The content to be shown when the state is checked */
-    checkedChildren: PropTypes.node,
+  /** Alias for defaultChecked */
+  defaultValue: PropTypes.bool, // Since 5.12.0
 
-    /** The additional class to Switch */
-    className: PropTypes.string,
+  /** Disable switch */
+  disabled: PropTypes.bool,
 
-    /** Whether to set the initial state */
-    defaultChecked: PropTypes.bool,
+  /** Loading state of switch */
+  loading: PropTypes.bool,
 
-    /** Alias for defaultChecked */
-    defaultValue: PropTypes.bool, // Since 5.12.0
+  /** Trigger when the checked state is changing */
+  onChange: PropTypes.func,
 
-    /** Disable switch */
-    disabled: PropTypes.bool,
+  /** Trigger when clicked */
+  onClick: PropTypes.func,
 
-    /** Loading state of switch */
-    loading: PropTypes.bool,
+  /** The size of the Switch, options: default small */
+  size: PropTypes.oneOf(['default', 'small']),
 
-    /** Trigger when the checked state is changing */
-    onChange: PropTypes.func,
+  /** The content to be shown when the state is unchecked */
+  unCheckedChildren: PropTypes.node,
 
-    /** Trigger when clicked */
-    onClick: PropTypes.func,
+  /** Alias for checked
+   */
+  value: PropTypes.bool, // Since 5.12.0
+}
 
-    /** The size of the Switch, options: default small */
-    size: PropTypes.string,
+Switch.defaultProps = {}
 
-    /** The content to be shown when the state is unchecked */
-    unCheckedChildren: PropTypes.node,
-
-    /** Alias for checked
-    */
-    value: PropTypes.bool, // Since 5.12.0
-
-};
-
-Switch.defaultProps = {};
-
-export default Switch;
+export default Switch
