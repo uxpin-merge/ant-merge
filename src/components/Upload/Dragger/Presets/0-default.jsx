@@ -1,20 +1,12 @@
-import * as React from 'react';
-import Dragger from '../Dragger';
-import Typography from '../../../Typography/Typography';
-import Flex from '../../../Flex/Flex';
-import Icon from '../../../Icon/Icon';
+import * as React from 'react'
+import Dragger from '../Dragger'
+import Typography from '../../../Typography/Typography'
+import Flex from '../../../Flex/Flex'
+import Icon from '../../../Icon/Icon'
 
 export default (
-  <Dragger uxpId="dragger-1" height={200}>
-
-    <Flex
-      gutter={30}
-      gap="30px"
-      vertical={true}
-      align="center"
-      style={{ padding: '10px' }}
-      uxpId="flex-1"
-    >
+  <Dragger uxpId="dragger-1" height={200} multiple>
+    <Flex gutter={30} gap="30px" vertical={true} align="center" style={{ padding: '10px' }} uxpId="flex-1">
       <Icon
         icon="FileAddTwoTone"
         style={{ fontSize: '70px', color: '' }}
@@ -27,5 +19,4 @@ export default (
       </Typography.Text>
     </Flex>
   </Dragger>
-
-);
+)
