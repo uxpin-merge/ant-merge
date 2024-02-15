@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { TimePicker as ANTComponent } from 'antd'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
+import RangePicker from './RangePicker/RangePicker'
 
 dayjs.extend(customParseFormat)
 
@@ -131,6 +132,8 @@ TimePicker.propTypes = {
    */
   onSelect: PropTypes.func,
 }
+
+TimePicker.RangePicker = RangePicker
 
 TimePicker.defaultProps = {}
 

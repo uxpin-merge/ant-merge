@@ -115,6 +115,7 @@ module.exports = {
           'src/components/Slider/Slider.jsx',
           'src/components/Switch/Switch.jsx',
           'src/components/TimePicker/TimePicker.jsx',
+          'src/components/TimePicker/RangePicker/RangePicker.jsx',
           'src/components/Transfer/Transfer.jsx',
           'src/components/TreeSelect/TreeSelect.jsx',
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
