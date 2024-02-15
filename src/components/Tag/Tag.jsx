@@ -24,7 +24,10 @@ Tag.propTypes = {
   style: PropTypes.object,
 
   /** Custom close icon. 5.7.0: close button will be hidden when setting to null or false */ closeIcon: PropTypes.bool,
-  /** Color of the Tag */ color: PropTypes.string,
+  /** Color of the Tag
+   * @uxpincontroltype color
+   * */
+  color: PropTypes.string,
   /** Set the icon of tag */ icon: PropTypes.node,
   /** Whether has border style */ bordered: PropTypes.bool,
   /** Callback executed when tag is closed */ onClose: PropTypes.func,

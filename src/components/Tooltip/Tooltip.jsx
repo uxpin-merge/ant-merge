@@ -35,7 +35,9 @@ Tooltip.propTypes = {
   /** Whether to adjust popup placement automatically when popup is off screen */
   autoAdjustOverflow: PropTypes.bool,
 
-  /** The background color */
+  /** The background color
+   * @uxpincontroltype color
+   */
   color: PropTypes.string, // Since version 4.3.0
 
   /** Whether the floating tooltip card is open by default */

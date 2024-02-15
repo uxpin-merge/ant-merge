@@ -47,7 +47,6 @@ QrCode.propTypes = {
    */
   bgColor: PropTypes.string,
   /** Whether it has border style
-
    */
   bordered: PropTypes.bool,
   /** Error Code Level: 'L', 'M', 'Q', 'H'

@@ -18,16 +18,18 @@ const Watermark = (props) => {
 
 Watermark.propTypes = {
   /** The content of the component. */
-  children: PropTypes.node,
+  // children: PropTypes.node,
 
   /** The style properties of the component */
-  style: PropTypes.object,
+  // style: PropTypes.object,
 
   /** Watermark text content
    */
   content: PropTypes.arrayOf(PropTypes.string),
 
-  /** Watermark text style */
+  /** Watermark text style
+   * @uxpincontroltype color
+   */
   color: PropTypes.string,
   /** Font size */
   fontSize: PropTypes.number,

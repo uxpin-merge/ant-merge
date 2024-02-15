@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Badge as ANTComponent } from "antd";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Badge as ANTComponent } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/Space/
@@ -9,29 +9,30 @@ import { Badge as ANTComponent } from "antd";
  */
 
 const Ribbon = (props) => {
-    // Component logic
+  // Component logic
 
-    return (
-        // Your component JSX
-        <ANTComponent.Ribbon {...props} />
-
-    );
-};
+  return (
+    // Your component JSX
+    <ANTComponent.Ribbon {...props} />
+  )
+}
 
 Ribbon.propTypes = {
-    /** The content of the component. */
-    children: PropTypes.node,
-    /** Customize Ribbon color */
-    color: PropTypes.string,
+  /** The content of the component. */
+  children: PropTypes.node,
+  /** Customize Ribbon color
+   * @uxpincontroltype color
+   */
+  color: PropTypes.string,
 
-    /** The placement of the Ribbon, 'start' and 'end' follow text direction (RTL or LTR) */
-    placement: PropTypes.oneOf(['start', 'end']),
-    /** The style properties of the component */
-    style: PropTypes.object,
-    /** Content inside the Ribbon */
-    text: PropTypes.node,
-};
+  /** The placement of the Ribbon, 'start' and 'end' follow text direction (RTL or LTR) */
+  placement: PropTypes.oneOf(['start', 'end']),
+  /** The style properties of the component */
+  style: PropTypes.object,
+  /** Content inside the Ribbon */
+  text: PropTypes.node,
+}
 
-Ribbon.defaultProps = {};
+Ribbon.defaultProps = {}
 
-export default Ribbon;
+export default Ribbon

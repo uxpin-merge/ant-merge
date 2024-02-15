@@ -23,10 +23,10 @@ Item.propTypes = {
 
   /** The style properties of the component */
   style: PropTypes.object,
-  /** Set the content */
-  children: PropTypes.node,
 
-  /** Set the circle's color to blue, red, green, gray or other custom colors */
+  /** Set the circle's color to blue, red, green, gray or other custom colors
+   * @uxpincontroltype color
+   */
   color: PropTypes.string,
 
   /** Customize timeline dot */

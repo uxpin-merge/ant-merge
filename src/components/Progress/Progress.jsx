@@ -41,19 +41,21 @@ Progress.propTypes = {
   status: PropTypes.oneOf(['success', 'exception', 'normal', 'active']),
   /** Configs of successfully progress bar */
   steps: PropTypes.number,
-  /** The color of circular progress, render gradient when passing an object */
-  from: PropTypes.string,
-  to: PropTypes.string,
+
   direction: PropTypes.string,
   /** The style of the progress linecap, options: round, butt, square */
   strokeLinecap: PropTypes.oneOf(['round', 'butt', 'square']),
   /** To set the type, options: line, circle, dashboard */
   strokeWidth: PropTypes.number,
-  /** The color of progress bar */
+  /** The color of progress bar
+   * @uxpincontroltype color
+   */
   strokeColor: PropTypes.string,
   /** Configs of successfully progress bar	 */
   success: PropTypes.object,
-  /** The color of unfilled part */
+  /** The color of unfilled part
+   * @uxpincontroltype color
+   */
   trailColor: PropTypes.string,
   /** Progress size */
   type: PropTypes.oneOf(['line', 'circle', 'dashboard']),
