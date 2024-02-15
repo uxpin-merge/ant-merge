@@ -4,6 +4,8 @@ import React from 'react';
 import defaultTheme from './boilerplate-theme';
 
 import { ConfigProvider } from 'antd';
+import { StyleProvider } from '@ant-design/cssinjs';
+
 // import './index.css'
 
 
@@ -56,9 +58,11 @@ export default function UXPinWrapper(props) {
 
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
+      <StyleProvider hashPriority="high">
       <ConfigProvider theme={themeOptions.theme} {...props} >
         {props.children}
       </ConfigProvider>
+      </StyleProvider>
     </ThemeContext.Provider>
   );
 }
