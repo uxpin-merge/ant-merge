@@ -1,6 +1,6 @@
 
 const boilerplateTheme = {
-  hashed: false,
+  // hashed: false,
   token: {
     // "colorPrimary": "red",
     // "colorSuccess": "#52c41a",
