@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Tour as ANTComponent } from 'antd'
-// import Step from "./Step/Step";
+import Step from './Step/Step'
+import { v4 as uuidv4 } from 'uuid'
 
 /**
  * @uxpindocurl https://ant.design/components/Tour/
@@ -11,10 +12,16 @@ import { Tour as ANTComponent } from 'antd'
 
 const Tour = (props) => {
   // Component logic
+  const id = `drawer-${uuidv4()}`
+  const container = `#${id}`
 
   return (
     // Your component JSX
-    <ANTComponent {...props} />
+
+    <div style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }} className="merge-component">
+      <ANTComponent getPopupContainer={() => container} {...props} />
+      <div id={id}></div>
+    </div>
   )
 }
 
@@ -24,23 +31,14 @@ Tour.propTypes = {
 
   /** The style properties of the component */
   style: PropTypes.object,
-  /** Get the element the guide card points to. Empty makes it show in center of screen */
-  target: PropTypes.oneOfType([PropTypes.func, PropTypes.instanceOf(HTMLElement)]),
-
   /** Whether to show the arrow, including the configuration whether to point to the center of the element */
   arrow: PropTypes.oneOfType([PropTypes.bool, PropTypes.shape({ pointAtCenter: PropTypes.bool })]),
 
   /** Customize close icon */
   closeIcon: PropTypes.node,
 
-  /** Displayed pictures or videos */
-  cover: PropTypes.node,
-
-  /** Title of the step */
-  title: PropTypes.node,
-
-  /** Description of the step */
-  description: PropTypes.node,
+  /** Disable interaction on highlighted area */
+  disabledInteraction: PropTypes.bool,
 
   /** Position of the guide card relative to the target element */
   placement: PropTypes.oneOf([
@@ -74,27 +72,35 @@ Tour.propTypes = {
   /** Type, affects the background color and text color */
   type: PropTypes.oneOf(['default', 'primary']),
 
-  /** Properties of the Next button */
-  nextButtonProps: PropTypes.shape({
-    children: PropTypes.node,
-    onClick: PropTypes.func,
-  }),
+  /** Open tour */
+  open: PropTypes.bool,
 
-  /** Properties of the previous button */
-  prevButtonProps: PropTypes.shape({
-    children: PropTypes.node,
-    onClick: PropTypes.func,
-  }),
+  /** Callback when the step changes. Current is the previous step */
+  onChange: PropTypes.func,
+
+  /** What is the current step */
+  current: PropTypes.number,
 
   /** support pass custom scrollIntoView options */
   scrollIntoViewOptions: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.object, // ScrollIntoViewOptions
   ]),
+
+  /** custom indicator */
+  indicatorsRender: PropTypes.func,
+
+  /** Tour's zIndex */
+  zIndex: PropTypes.number,
+
+  /** Set the rendering node of Tour floating layer */
+  getPopupContainer: PropTypes.func,
+
+  steps: PropTypes.object,
 }
 
 Tour.defaultProps = {}
 
-// Tour.Step = Step;
+Tour.Step = Step
 
 export default Tour

@@ -17,6 +17,7 @@ const Button = (props) => {
 }
 
 Button.propTypes = {
+  id: PropTypes.string,
   /** The content of the component. */
   children: PropTypes.node,
 

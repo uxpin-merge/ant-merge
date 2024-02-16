@@ -117,8 +117,8 @@ module.exports = {
           'src/components/Timeline/Timeline.jsx',
           'src/components/Timeline/Item/Item.jsx',
           'src/components/Tooltip/Tooltip.jsx',
-          'src/components/Tour/Tour.jsx',
-          'src/components/Tour/Step/Step.jsx',
+          // 'src/components/Tour/Tour.jsx',
+          // 'src/components/Tour/Step/Step.jsx',
           'src/components/Tree/Tree.jsx',
         ]
       },
