@@ -2,7 +2,7 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
+        name: 'GENERAL',
         include: [
           'src/components/Button/Button.jsx',
           'src/components/FloatButton/FloatButton.jsx',
@@ -17,7 +17,7 @@ module.exports = {
         ]
       },
       {
-        name: 'Layout',
+        name: 'LAYOUT',
         include: [
           'src/components/Affix/Affix.jsx',
           'src/components/Divider/Divider.jsx',
@@ -34,7 +34,7 @@ module.exports = {
         ]
       },
       {
-        name: 'Navigation',
+        name: 'NAVIGATION',
         include: [
           'src/components/Anchor/Anchor.jsx',
           'src/components/Breadcrumb/Breadcrumb.jsx',
@@ -53,7 +53,7 @@ module.exports = {
         ]
       },
       {
-        name: 'Data Entry',
+        name: 'DATA ENTRY',
         include: [
           'src/components/AutoComplete/AutoComplete.jsx',
           'src/components/Cascader/Cascader.jsx',
@@ -88,7 +88,7 @@ module.exports = {
         ]
       },
       {
-        name: 'Data Display',
+        name: 'DATA DISPLAY',
         include: [
           'src/components/Avatar/Avatar.jsx',
           'src/components/Avatar/Group/Group.jsx',
@@ -125,7 +125,7 @@ module.exports = {
 
 
       {
-        name: 'Feedback',
+        name: 'FEEDBACK',
         include: [
           'src/components/Alert/Alert.jsx',
           'src/components/Drawer/Drawer.jsx',
