@@ -59,8 +59,8 @@ export default function UXPinWrapper(props) {
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
       {/* <StyleProvider hashPriority="high"> */}
-      <ConfigProvider theme={themeOptions.theme} {...props}
-
+      <ConfigProvider  theme={{ cssVar: true, hashed: false, ...themeOptions.theme }} {...props}
+hashed
       // hashPriority="high"
        >
         {props.children}
