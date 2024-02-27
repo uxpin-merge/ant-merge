@@ -12,8 +12,9 @@ const Button = (props) => {
 
   return (
     <>
-      <img src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*7va7RKs3YzIAAAAAAAAAAAAADrJ8AQ/original" />
-      <ANTComponent {...props} />
+      <ANTComponent {...props}>
+        <img src="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*7va7RKs3YzIAAAAAAAAAAAAADrJ8AQ/original" />
+      </ANTComponent>
     </>
   )
 }
