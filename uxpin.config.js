@@ -14,7 +14,7 @@ module.exports = {
           'src/components/Typography/Link/Link.jsx',
           'src/components/Typography/Title/Title.jsx',
           'src/components/Typography/Paragraph/Paragraph.jsx',
-        ]
+        ],
       },
       {
         name: 'LAYOUT',
@@ -31,7 +31,7 @@ module.exports = {
           'src/components/Layout/Content/Content.jsx',
           'src/components/Space/Space.jsx',
           'src/components/Space/Compact/Compact.jsx',
-        ]
+        ],
       },
       {
         name: 'NAVIGATION',
@@ -49,8 +49,7 @@ module.exports = {
           'src/components/Steps/Item/Item.jsx',
 
           // 'src/components/AnchorItem/AnchorItem.jsx',
-
-        ]
+        ],
       },
       {
         name: 'DATA ENTRY',
@@ -85,7 +84,7 @@ module.exports = {
           'src/components/TreeSelect/TreeNode/TreeNode.jsx',
           'src/components/Upload/Upload.jsx',
           'src/components/Upload/Dragger/Dragger.jsx',
-        ]
+        ],
       },
       {
         name: 'DATA DISPLAY',
@@ -120,9 +119,8 @@ module.exports = {
           // 'src/components/Tour/Tour.jsx',
           // 'src/components/Tour/Step/Step.jsx',
           'src/components/Tree/Tree.jsx',
-        ]
+        ],
       },
-
 
       {
         name: 'FEEDBACK',
@@ -143,18 +141,35 @@ module.exports = {
           'src/components/Skeleton/Node/Node.jsx',
           'src/components/Spin/Spin.jsx',
           'src/components/Watermark/Watermark.jsx',
-        ]
+        ],
       },
       {
         name: 'UTILITIES',
         include: [
           'src/components/ThemeCustomizer/ThemeCustomizer.js',
           'src/components/ConfigProvider/ConfigProvider.jsx',
-        ]
+        ],
+      },
+      {
+        name: 'HTML',
+        include: [
+          'src/components/UXPinProvided/HtmlComponents/HtmlHeading/HtmlHeading.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlText/HtmlText.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlDiv/HtmlDiv.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlList/HtmlList.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlListItem/HtmlListItem.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTable/HtmlTable.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableHead/HtmlTableHead.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableBody/HtmlTableBody.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableHeading/HtmlTableHeading.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableRow/HtmlTableRow.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableCell/HtmlTableCell.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTag/HtmlTag.jsx',
+        ],
       },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'webpack.config.js',
   },
   name: 'ANT-UXPin-Merge',
-};
+}
