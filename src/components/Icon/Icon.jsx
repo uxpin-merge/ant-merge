@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import * as Icons from '@ant-design/icons'
-import { Flex } from 'antd'
+
 /**
  * @uxpindocurl https://ant.design/components/icon
  * @uxpindescription Icons from @ant-design/icons. You can still set style property for size and color of icons.
+ * @uxpinhtmloutput
  */
 /**
  * @uxpinwrappers
