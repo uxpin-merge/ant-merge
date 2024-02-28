@@ -167,6 +167,16 @@ module.exports = {
           'src/components/UXPinProvided/HtmlComponents/HtmlTag/HtmlTag.jsx',
         ],
       },
+      {
+        name: 'MUI-X CHARTS',
+        include: [
+          'src/components/UXPinProvided/MuiXCharts/BarChart/BarChart.js',
+          'src/components/UXPinProvided/MuiXCharts/LineChart/LineChart.js',
+          'src/components/UXPinProvided/MuiXCharts/PieChart/PieChart.js',
+          'src/components/UXPinProvided/MuiXCharts/ScatterChart/ScatterChart.js',
+          'src/components/UXPinProvided/MuiXCharts/SparkLineChart/SparkLineChart.js',
+        ],
+      },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'webpack.config.js',
