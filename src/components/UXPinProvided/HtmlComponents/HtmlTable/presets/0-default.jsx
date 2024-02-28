@@ -5,7 +5,6 @@ import HtmlTableBody from '../../HtmlTableBody/HtmlTableBody'
 import HtmlTableHead from '../../HtmlTableHead/HtmlTableHead'
 import HtmlTableRow from '../../HtmlTableRow/HtmlTableRow'
 import HtmlTableCell from '../../HtmlTableCell/HtmlTableCell'
-HtmlTableHead
 
 export default (
   <HtmlTable uxpId="HtmlTable" width="100%">
