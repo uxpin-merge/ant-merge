@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Typography as ANTComponent, Flex } from "antd";
-
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Typography as ANTComponent, Flex } from 'antd'
 
 /**
  * @uxpindocurl https://ant.design/components/typography/
@@ -9,63 +8,75 @@ import { Typography as ANTComponent, Flex } from "antd";
  * @uxpinnamespace Typography
  */
 const Title = (props) => {
-    return (
-        <Flex><ANTComponent.Title {...props} /></Flex>
-    );
-};
+  const { color, style, ...other } = props
+
+  const combinedStyle = {
+    color,
+    ...style,
+  }
+
+  return (
+    <Flex>
+      <ANTComponent.Title {...other} style={combinedStyle} />
+    </Flex>
+  )
+}
 
 Title.propTypes = {
-        /** The ID for input */
-        id: PropTypes.string,
-    /** The content of the Text */
-    children: PropTypes.node,
-    /** Code style */
-    code: PropTypes.bool,
+  /** The color of Title
+   * @uxpincontroltype color
+   */
+  color: PropTypes.string,
+  /** The ID for input */
+  id: PropTypes.string,
+  /** The content of the Text */
+  children: PropTypes.node,
+  /** Code style */
+  code: PropTypes.bool,
 
-    /** Whether to be copyable. boolean or object. See documentation.*/
-    copyable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  /** Whether to be copyable. boolean or object. See documentation.*/
+  copyable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /** Deleted line style */
-    delete: PropTypes.bool,
+  /** Deleted line style */
+  delete: PropTypes.bool,
 
-    /** Disabled content */
-    disabled: PropTypes.bool,
+  /** Disabled content */
+  disabled: PropTypes.bool,
 
-    /** If editable. boolean or object. See documentation.*/
-    editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  /** If editable. boolean or object. See documentation.*/
+  editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /** Display ellipsis. boolean or object. See documentation.*/
-    ellipsis: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.shape({
-            rows: PropTypes.number,
-            expandable: PropTypes.bool,
-        }),
-    ]),
+  /** Display ellipsis. boolean or object. See documentation.*/
+  ellipsis: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.shape({
+      rows: PropTypes.number,
+      expandable: PropTypes.bool,
+    }),
+  ]),
 
-    /** Set content importance. Match with h1, h2, h3, h4, h5 */
-    level: PropTypes.oneOf([1, 2, 3, 4, 5]),
+  /** Set content importance. Match with h1, h2, h3, h4, h5 */
+  level: PropTypes.oneOf([1, 2, 3, 4, 5]),
 
-    /** Marked style */
-    mark: PropTypes.bool,
+  /** Marked style */
+  mark: PropTypes.bool,
 
-    /** Set the handler to handle click event */
-    onClick: PropTypes.func,
+  /** Set the handler to handle click event */
+  onClick: PropTypes.func,
 
-    /** Italic style */
-    italic: PropTypes.bool,
+  /** Italic style */
+  italic: PropTypes.bool,
 
+  /** The style properties of the component */
+  style: PropTypes.object,
 
-    /** The style properties of the component */
-    style: PropTypes.object,
+  /** Content type */
+  type: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
 
-    /** Content type */
-    type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
+  /** Underlined style */
+  underline: PropTypes.bool,
+}
 
-    /** Underlined style */
-    underline: PropTypes.bool,
-};
+Title.defaultProps = {}
 
-Title.defaultProps = {};
-
-export default Title;
+export default Title
