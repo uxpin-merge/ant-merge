@@ -1,7 +1,4 @@
-import * as React from 'react';
-import QrCode from '../QrCode';
+import * as React from 'react'
+import QRCode from '../QRCode'
 
-export default (
-  <QrCode value="https://ant.design/" uxpId="qrcode-1" />
-
-);
+export default <QRCode value="https://ant.design/" uxpId="qrcode-1" />

@@ -7,7 +7,7 @@ import { QRCode as ANTComponent } from 'antd'
  * @uxpindescription Components that can convert text into QR codes, and support custom color and logo.
  */
 
-const QrCode = (props) => {
+const QRCode = (props) => {
   // Component logic
 
   return (
@@ -16,7 +16,7 @@ const QrCode = (props) => {
   )
 }
 
-QrCode.propTypes = {
+QRCode.propTypes = {
   /** The content of the component. */
   children: PropTypes.node,
 
@@ -60,6 +60,6 @@ QrCode.propTypes = {
   onRefresh: PropTypes.func,
 }
 
-QrCode.defaultProps = {}
+QRCode.defaultProps = {}
 
-export default QrCode
+export default QRCode
