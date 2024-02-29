@@ -33,7 +33,10 @@ Image.propTypes = {
 
   /** Preview config, disabled when false */ preview: PropTypes.bool,
 
-  /** Image path */ src: PropTypes.string,
+  /** Image path
+   * @uxpincontroltype image
+   * */
+  src: PropTypes.string,
 
   /** Image width */ width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
