@@ -8,25 +8,14 @@ import { Typography as ANTComponent, Flex } from 'antd'
  * @uxpinnamespace Typography
  */
 const Title = (props) => {
-  const { color, style, ...other } = props
-
-  const combinedStyle = {
-    color,
-    ...style,
-  }
-
   return (
     <Flex>
-      <ANTComponent.Title {...other} style={combinedStyle} />
+      <ANTComponent.Title {...props} />
     </Flex>
   )
 }
 
 Title.propTypes = {
-  /** The color of Title
-   * @uxpincontroltype color
-   */
-  color: PropTypes.string,
   /** The ID for input */
   id: PropTypes.string,
   /** The content of the Text */

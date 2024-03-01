@@ -1,6 +1,8 @@
-import * as React from 'react';
-import Title from '../Title';
+import * as React from 'react'
+import Title from '../Title'
 
 export default (
-  <Title uxpId="title-1">Typography.Title</Title>
-);
+  <Title uxpId="title-1" level={1}>
+    Typography.Title
+  </Title>
+)

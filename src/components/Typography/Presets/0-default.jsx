@@ -1,17 +1,17 @@
-import * as React from 'react';
-import Typography from '../Typography';
+import * as React from 'react'
+import Typography from '../Typography'
 
 export default (
   <Typography uxpId="typography-1">
     <Typography.Title uxpId="title-1">Introduction</Typography.Title>
 
-    <Typography.Text uxpId="text-1">Text</Typography.Text>
+    <Typography.Text uxpId="text-1" strong mark>
+      Lorem ipsum dolor sit amet
+    </Typography.Text>
 
     <Typography.Paragraph uxpId="paragraph-1">
-      In the process of internal desktop applications development, many different design specs and
-      implementations would be involved, which might cause designers and developers difficulties and
-      duplication and reduce the efficiency of development.
+      Donec ante velit, tincidunt vel elementum a, sodales non sapien. Sed mollis lorem erat, pharetra elementum urna
+      hendrerit non. Vestibulum sodales leo sit amet consectetur fermentum.
     </Typography.Paragraph>
-
   </Typography>
-);
+)
