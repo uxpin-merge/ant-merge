@@ -1,208 +1,206 @@
-import * as React from 'react';
-import AutoComplete from '../AutoComplete';
+import * as React from 'react'
+import AutoComplete from '../AutoComplete'
 const options = [
   {
     value: 'Alabama',
-    label: 'Alabama'
+    label: 'Alabama',
   },
   {
     value: 'Alaska',
-    label: 'Alaska'
+    label: 'Alaska',
   },
   {
     value: 'Arizona',
-    label: 'Arizona'
+    label: 'Arizona',
   },
   {
     value: 'Arkansas',
-    label: 'Arkansas'
+    label: 'Arkansas',
   },
   {
     value: 'California',
-    label: 'California'
+    label: 'California',
   },
   {
     value: 'Colorado',
-    label: 'Colorado'
+    label: 'Colorado',
   },
   {
     value: 'Connecticut',
-    label: 'Connecticut'
+    label: 'Connecticut',
   },
   {
     value: 'Delaware',
-    label: 'Delaware'
+    label: 'Delaware',
   },
   {
     value: 'Florida',
-    label: 'Florida'
+    label: 'Florida',
   },
   {
     value: 'Georgia',
-    label: 'Georgia'
+    label: 'Georgia',
   },
   {
     value: 'Hawaii',
-    label: 'Hawaii'
+    label: 'Hawaii',
   },
   {
     value: 'Idaho',
-    label: 'Idaho'
+    label: 'Idaho',
   },
   {
     value: 'Illinois',
-    label: 'Illinois'
+    label: 'Illinois',
   },
   {
     value: 'Indiana',
-    label: 'Indiana'
+    label: 'Indiana',
   },
   {
     value: 'Iowa',
-    label: 'Iowa'
+    label: 'Iowa',
   },
   {
     value: 'Kansas',
-    label: 'Kansas'
+    label: 'Kansas',
   },
   {
     value: 'Kentucky',
-    label: 'Kentucky'
+    label: 'Kentucky',
   },
   {
     value: 'Louisiana',
-    label: 'Louisiana'
+    label: 'Louisiana',
   },
   {
     value: 'Maine',
-    label: 'Maine'
+    label: 'Maine',
   },
   {
     value: 'Maryland',
-    label: 'Maryland'
+    label: 'Maryland',
   },
   {
     value: 'Massachusetts',
-    label: 'Massachusetts'
+    label: 'Massachusetts',
   },
   {
     value: 'Michigan',
-    label: 'Michigan'
+    label: 'Michigan',
   },
   {
     value: 'Minnesota',
-    label: 'Minnesota'
+    label: 'Minnesota',
   },
   {
     value: 'Mississippi',
-    label: 'Mississippi'
+    label: 'Mississippi',
   },
   {
     value: 'Missouri',
-    label: 'Missouri'
+    label: 'Missouri',
   },
   {
     value: 'Montana',
-    label: 'Montana'
+    label: 'Montana',
   },
   {
     value: 'Nebraska',
-    label: 'Nebraska'
+    label: 'Nebraska',
   },
   {
     value: 'Nevada',
-    label: 'Nevada'
+    label: 'Nevada',
   },
   {
     value: 'New Hampshire',
-    label: 'New Hampshire'
+    label: 'New Hampshire',
   },
   {
     value: 'New Jersey',
-    label: 'New Jersey'
+    label: 'New Jersey',
   },
   {
     value: 'New Mexico',
-    label: 'New Mexico'
+    label: 'New Mexico',
   },
   {
     value: 'New York',
-    label: 'New York'
+    label: 'New York',
   },
   {
     value: 'North Carolina',
-    label: 'North Carolina'
+    label: 'North Carolina',
   },
   {
     value: 'North Dakota',
-    label: 'North Dakota'
+    label: 'North Dakota',
   },
   {
     value: 'Ohio',
-    label: 'Ohio'
+    label: 'Ohio',
   },
   {
     value: 'Oklahoma',
-    label: 'Oklahoma'
+    label: 'Oklahoma',
   },
   {
     value: 'Oregon',
-    label: 'Oregon'
+    label: 'Oregon',
   },
   {
     value: 'Pennsylvania',
-    label: 'Pennsylvania'
+    label: 'Pennsylvania',
   },
   {
     value: 'Rhode Island',
-    label: 'Rhode Island'
+    label: 'Rhode Island',
   },
   {
     value: 'South Carolina',
-    label: 'South Carolina'
+    label: 'South Carolina',
   },
   {
     value: 'South Dakota',
-    label: 'South Dakota'
+    label: 'South Dakota',
   },
   {
     value: 'Tennessee',
-    label: 'Tennessee'
+    label: 'Tennessee',
   },
   {
     value: 'Texas',
-    label: 'Texas'
+    label: 'Texas',
   },
   {
     value: 'Utah',
-    label: 'Utah'
+    label: 'Utah',
   },
   {
     value: 'Vermont',
-    label: 'Vermont'
+    label: 'Vermont',
   },
   {
     value: 'Virginia',
-    label: 'Virginia'
+    label: 'Virginia',
   },
   {
     value: 'Washington',
-    label: 'Washington'
+    label: 'Washington',
   },
   {
     value: 'West Virginia',
-    label: 'West Virginia'
+    label: 'West Virginia',
   },
   {
     value: 'Wisconsin',
-    label: 'Wisconsin'
+    label: 'Wisconsin',
   },
   {
     value: 'Wyoming',
-    label: 'Wyoming'
-  }
-];
+    label: 'Wyoming',
+  },
+]
 
-export default (
-  <AutoComplete options={options} uxpId="autocomplete-1" />
-);
+export default <AutoComplete options={options} filterOption uxpId="autocomplete-1" />
