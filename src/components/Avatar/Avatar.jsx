@@ -31,7 +31,9 @@ Avatar.propTypes = {
   shape: PropTypes.oneOf(['circle', 'square']),
   /** The size of the avatar: number, 'small', 'large'*/
   size: PropTypes.oneOf(['small', 'middle', 'large']),
-  /** The address of the image for an image avatar or image element */
+  /** The address of the image for an image avatar or image element
+   * @uxpincontroltype image
+   */
   src: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** A list of sources to use for different screen resolutions */
   srcSet: PropTypes.string,
