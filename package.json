@@ -11,7 +11,7 @@
     "@types/node": "^20.3.1",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
-    "antd": "^5.11.4",
+    "antd": "^5.15.2",
     "apexcharts": "^3.35.5",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.2",
