@@ -5,6 +5,7 @@ import Link from './Link/Link'
 import Text from './Text/Text'
 import Title from './Title/Title'
 import Paragraph from './Paragraph/Paragraph'
+import { v4 as uuidv4 } from 'uuid'
 
 /**
  * @uxpindocurl https://ant.design/components/Typography/
@@ -13,10 +14,12 @@ import Paragraph from './Paragraph/Paragraph'
 
 const Typography = (props) => {
   // Component logic
-
+  const key = uuidv4()
   return (
     <Flex>
-      <ANTComponent {...props}>{props.children}</ANTComponent>
+      <ANTComponent {...props} key={key}>
+        {props.children}
+      </ANTComponent>
     </Flex>
   )
 }

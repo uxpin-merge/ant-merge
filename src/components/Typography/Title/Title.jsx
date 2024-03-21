@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Typography as ANTComponent, Flex } from 'antd'
+import { v4 as uuidv4 } from 'uuid'
 
 /**
  * @uxpindocurl https://ant.design/components/typography/
@@ -8,9 +9,11 @@ import { Typography as ANTComponent, Flex } from 'antd'
  * @uxpinnamespace Typography
  */
 const Title = (props) => {
+  const key = uuidv4()
+
   return (
     <Flex>
-      <ANTComponent.Title {...props} />
+      <ANTComponent.Title {...props} key={key} />
     </Flex>
   )
 }

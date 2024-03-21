@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import { Typography as ANTComponent, Flex} from "antd";
-
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Typography as ANTComponent, Flex } from 'antd'
+import { v4 as uuidv4 } from 'uuid'
 
 /**
  * @uxpindocurl https://ant.design/components/typography/
@@ -9,73 +9,77 @@ import { Typography as ANTComponent, Flex} from "antd";
  * @uxpinnamespace Typography
  */
 const Link = (props) => {
-    return (
-      <Flex><ANTComponent.Link {...props} /></Flex>
-    );
-};
+  const key = uuidv4()
+
+  return (
+    <Flex>
+      <ANTComponent.Link {...props} key={key} />
+    </Flex>
+  )
+}
 
 Link.propTypes = {
-    /** The content of the Text */
-    children: PropTypes.node,
-    /** Code style */
-    code: PropTypes.bool,
+  /** The content of the Text */
+  children: PropTypes.node,
+  /** Code style */
+  code: PropTypes.bool,
 
-    /** Whether to be copyable. boolean or object. See documentation.*/
-    copyable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  /** Whether to be copyable. boolean or object. See documentation.*/
+  copyable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /** Deleted line style */
-    delete: PropTypes.bool,
+  /** Deleted line style */
+  delete: PropTypes.bool,
 
-    /** Disabled content */
-    disabled: PropTypes.bool,
+  /** Disabled content */
+  disabled: PropTypes.bool,
 
-    /** If editable. boolean or object. See documentation.*/
-    editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  /** If editable. boolean or object. See documentation.*/
+  editable: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
-    /** Display ellipsis when text overflows, can't configure expandable、rows and onExpand by using object. Diff with Typography.Paragraph, Text do not have 100% width style which means it will fix width on the first ellipsis. If you want to have responsive ellipsis, please set width manually */
-    ellipsis: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.shape({
-            expandable: PropTypes.bool,
-            rows: PropTypes.number,
-            onExpand: PropTypes.func,
-        }),
-    ]),
+  /** Display ellipsis when text overflows, can't configure expandable、rows and onExpand by using object. Diff with Typography.Paragraph, Text do not have 100% width style which means it will fix width on the first ellipsis. If you want to have responsive ellipsis, please set width manually */
+  ellipsis: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.shape({
+      expandable: PropTypes.bool,
+      rows: PropTypes.number,
+      onExpand: PropTypes.func,
+    }),
+  ]),
 
-    /** The target of hyperlink	 */
-    href: PropTypes.string,
+  /** The target of hyperlink	 */
+  href: PropTypes.string,
 
-    /** Keyboard style */
-    keyboard: PropTypes.bool,
+  /** Keyboard style */
+  keyboard: PropTypes.bool,
 
-    /** Italic style */
-    italic: PropTypes.bool,
+  /** Italic style */
+  italic: PropTypes.bool,
 
-    /** Marked style */
-    mark: PropTypes.bool,
+  /** Marked style */
+  mark: PropTypes.bool,
 
-    /** Set the handler to handle click event */
-    onClick: PropTypes.func,
+  /** Set the handler to handle click event */
+  onClick: PropTypes.func,
 
-    /** Bold style */
-    strong: PropTypes.bool,
+  /** Bold style */
+  strong: PropTypes.bool,
 
-    /** The style properties of the component */
-    style: PropTypes.object,
+  /** The style properties of the component */
+  style: PropTypes.object,
 
-    /** Specifies where to display the linked URL	 */
-    target: PropTypes.string,
+  /** Specifies where to display the linked URL	 */
+  target: PropTypes.string,
 
-    /** The text shown in the tooltip	 */
-    title: PropTypes.node,
+  /** The text shown in the tooltip	 */
+  title: PropTypes.node,
 
-    /** Content type */
-    type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
+  /** Content type */
+  type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
 
-    /** Underlined style */
-    underline: PropTypes.bool,
-};
+  /** Underlined style */
+  underline: PropTypes.bool,
+}
 
-Link.defaultProps = {};
+Link.defaultProps = {}
 
-export default Link;
+export default Link
