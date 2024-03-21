@@ -63,7 +63,7 @@ Paragraph.propTypes = {
   style: PropTypes.object,
 
   /** Content type */
-  type: PropTypes.oneOf(['secondary', 'success', 'warning', 'danger']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
 
   /** Underlined style */
   underline: PropTypes.bool,
