@@ -40,6 +40,9 @@ Item.propTypes = {
 
   /** Set display title for collapsed item */
   title: PropTypes.string,
+
+  /** Function to handle click event */
+  onClick: PropTypes.func,
 }
 
 Item.defaultProps = {}
