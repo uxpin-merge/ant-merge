@@ -4,6 +4,7 @@ module.exports = {
       {
         name: 'GENERAL',
         include: [
+          'src/components/Car/Car.jsx',
           'src/components/Button/Button.jsx',
           'src/components/FloatButton/FloatButton.jsx',
           'src/components/FloatButton/Group/Group.jsx',
