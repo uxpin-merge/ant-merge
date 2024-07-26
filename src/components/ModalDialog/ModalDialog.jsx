@@ -66,11 +66,13 @@ ModalDialog.propTypes = {
 
   /** Modal dialog visibility
    * onCancel 0.defaultPrevented
-   * @uxpinbind afterOpenChange 0
+   * @uxpinbind afterOpenChange
    * @uxpindescription Whether to display the dialog.
    *
    */
   open: PropTypes.bool,
+
+  afterOpenChange: PropTypes.func,
 }
 
 ModalDialog.defaultProps = {}
