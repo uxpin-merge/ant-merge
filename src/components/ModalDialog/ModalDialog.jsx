@@ -70,7 +70,7 @@ ModalDialog.propTypes = {
    * @uxpindescription Whether to display the dialog.
    *
    */
-  // open: PropTypes.bool,
+  open: PropTypes.bool,
 }
 
 ModalDialog.defaultProps = {}
