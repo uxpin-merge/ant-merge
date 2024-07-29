@@ -129,7 +129,7 @@ module.exports = {
           'src/components/Drawer/Drawer.jsx',
           // 'src/components/Message/Message.jsx',
           'src/components/ModalDialog/ModalDialog.jsx',
-          // 'src/components/Modal/Modal.jsx',
+          'src/components/Modal/Modal.jsx',
           // 'src/components/Notification/Notification.jsx',
           'src/components/Popconfirm/Popconfirm.jsx',
           'src/components/Progress/Progress.jsx',
