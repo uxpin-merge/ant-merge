@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Modal as ANTComponent } from 'antd'
+import { Modal as ANTComponent, ConfigProvider } from 'antd'
 import { v4 as uuidv4 } from 'uuid'
 
 /**
@@ -15,10 +15,14 @@ const Modal = (props) => {
 
   return (
     // Your component JSX
-    <div style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }} className="merge-component">
-      <ANTComponent getContainer={container} {...props} />
-      <div id={id}></div>
-    </div>
+    <ConfigProvider getPopupContainer={() => document.querySelector(container)}>
+      <div
+        style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}
+        className="merge-component"
+        id={id}
+      ></div>
+      <ANTComponent {...props} />
+    </ConfigProvider>
   )
 }
 
