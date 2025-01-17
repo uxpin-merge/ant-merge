@@ -182,4 +182,5 @@ module.exports = {
     webpackConfig: 'webpack.config.js',
   },
   name: 'ANT-UXPin-Merge',
+  settings: { useUXPinProps: true, useConvertingToUXPinClassic: true },
 }
