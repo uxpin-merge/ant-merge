@@ -59,7 +59,9 @@ Title.propTypes = {
   /** Italic style */
   italic: PropTypes.bool,
 
-  /** The style properties of the component */
+  /** The style properties of the component
+   * @uxpincontroltype css
+   */
   style: PropTypes.object,
 
   /** Content type */
