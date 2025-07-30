@@ -13,9 +13,13 @@ const List = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent {...props} renderItem={(item) => (
-            props.children
-        )}
+        <ANTComponent {...props} renderItem={(item) => {
+            if (props.renderItem) {
+                return props.renderItem(item);
+            }
+
+            return props.children;
+        }}
         />
     );
 };
@@ -58,6 +62,7 @@ List.propTypes = {
     pagination: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 
     /** Customize list item when using dataSource */
+    /** @uxpincontroltype returningfunction(item) */
     renderItem: PropTypes.func,
 
     /** Item's unique value, could be an Item's key which holds a unique value of type React.Key or function that receives Item and returns a React.Key */
