@@ -13,7 +13,7 @@ const Content = (props) => {
 
     return (
         // Your component JSX
-        <ANTComponent.Footer {...props} />
+        <ANTComponent.Content {...props} />
 
     );
 };
