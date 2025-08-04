@@ -61,7 +61,10 @@ Button.propTypes = {
    * Set the icon component of button.
    */
   icon: PropTypes.node, // ReactNode
-
+  /**
+   * Set the icon position of button.
+   */
+  iconPosition: PropTypes.oneOf(['start', 'end']),
   /**
    * Set the loading status of button. Can be a boolean or an object with a 'delay' number property.
    */
